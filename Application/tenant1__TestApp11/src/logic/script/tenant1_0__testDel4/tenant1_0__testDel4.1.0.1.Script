@@ -1,0 +1,22 @@
+{
+	"active": true,
+	"belongTo": "000f0000016NpKKfemf2",
+	"belongTo.__objectType": "Application",
+	"belongTo.name": "tenant1__TestApp11",
+	"catalogue": null,
+	"content": "// Here's your code.\r\nconsole.log(\"test4\")",
+	"createdDate": "2023-09-23 07:04:46",
+	"custom": true,
+	"description": "",
+	"id": "001a0000016o1MrVncdk",
+	"jscode": "// Here's your code.\r\nconsole.log(\"test4\");\r\n//# sourceMappingURL=tenant1_0__testDel4.js.map",
+	"label": null,
+	"lastModifiedDate": "2023-09-23 07:04:58",
+	"methodName": "",
+	"name": "tenant1_0__testDel4",
+	"overridable": true,
+	"protectMode": 0,
+	"sourceMap": "{\"version\":3,\"file\":\"tenant1_0__testDel4.js\",\"sourceRoot\":\"\",\"sources\":[\"tenant1_0__testDel4.ts\"],\"names\":[],\"mappings\":\"AAAA,oBAAoB;AACpB,OAAO,CAAC,GAAG,CAAC,OAAO,CAAC,CAAA\"}",
+	"version": "1.0.1",
+	"visibility": 0
+}
