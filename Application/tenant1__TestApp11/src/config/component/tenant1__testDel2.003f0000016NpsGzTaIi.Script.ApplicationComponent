@@ -1,0 +1,19 @@
+{
+	"appId": "000f0000016NpKKfemf2",
+	"appId.__objectType": "Application",
+	"appId.name": "tenant1__TestApp11",
+	"belongTo": null,
+	"category": null,
+	"createdDate": "2023-09-07 12:26:11",
+	"custom": true,
+	"id": "003f0000016NpsGzTaIi",
+	"lastModifiedDate": "2023-09-07 12:26:11",
+	"name": "tenant1__testDel2",
+	"parent": "003f0000016NpLCYbVcO",
+	"parent.__objectType": "ApplicationComponent",
+	"parent.name": "Logic",
+	"protectMode": 0,
+	"seqNo": null,
+	"type": "Script",
+	"visibility": 0
+}
