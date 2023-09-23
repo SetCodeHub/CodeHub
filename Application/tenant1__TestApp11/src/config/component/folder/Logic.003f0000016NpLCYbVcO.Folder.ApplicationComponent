@@ -1,0 +1,17 @@
+{
+	"appId": "000f0000016NpKKfemf2",
+	"appId.__objectType": "Application",
+	"appId.name": "tenant1__TestApp11",
+	"belongTo": null,
+	"category": null,
+	"createdDate": "2023-09-07 12:18:43",
+	"custom": true,
+	"id": "003f0000016NpLCYbVcO",
+	"lastModifiedDate": "2023-09-07 12:18:43",
+	"name": "Logic",
+	"parent": null,
+	"protectMode": 0,
+	"seqNo": null,
+	"type": "Folder",
+	"visibility": 0
+}

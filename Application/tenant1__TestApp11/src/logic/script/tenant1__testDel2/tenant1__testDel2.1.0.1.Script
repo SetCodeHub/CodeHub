@@ -1,0 +1,22 @@
+{
+	"active": true,
+	"belongTo": "000f0000016NpKKfemf2",
+	"belongTo.__objectType": "Application",
+	"belongTo.name": "tenant1__TestApp11",
+	"catalogue": null,
+	"content": "// Here's your code.",
+	"createdDate": "2023-09-07 12:26:11",
+	"custom": true,
+	"description": "",
+	"id": "001a0000016NpsGJkYBE",
+	"jscode": "// Here's your code.\r\n//# sourceMappingURL=tenant1__testDel2.js.map",
+	"label": null,
+	"lastModifiedDate": "2023-09-07 14:37:30",
+	"methodName": "",
+	"name": "tenant1__testDel2",
+	"overridable": true,
+	"protectMode": 0,
+	"sourceMap": "{\"version\":3,\"file\":\"tenant1__testDel2.js\",\"sourceRoot\":\"\",\"sources\":[\"tenant1__testDel2.ts\"],\"names\":[],\"mappings\":\"AAAA,oBAAoB\"}",
+	"version": "1.0.1",
+	"visibility": 0
+}
