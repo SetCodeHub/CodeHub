@@ -1,0 +1,22 @@
+{
+	"appId": "000f000001601vs99Cts",
+	"appId.__objectType": "Application",
+	"appId.name": "tenant1__App1",
+	"belongTo": null,
+	"createdDate": "2023-08-28 07:05:05",
+	"custom": true,
+	"description": "",
+	"id": "001u00000166rtFnY0Zc",
+	"isLeaf": true,
+	"label": "nocode",
+	"lastModifiedDate": "2023-08-28 07:05:05",
+	"logo": "menuicon icon-app",
+	"name": "nocode",
+	"parentMenu": null,
+	"protectMode": 0,
+	"sequenceNo": 1,
+	"tabId": "001g00000166rtExJodk",
+	"tabId.__objectType": "Tab",
+	"tabId.name": "tenant1__App1_nocode",
+	"visibility": 0
+}

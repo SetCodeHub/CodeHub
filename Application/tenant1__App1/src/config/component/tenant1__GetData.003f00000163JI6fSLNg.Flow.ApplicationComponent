@@ -1,0 +1,19 @@
+{
+	"appId": "000f000001601vs99Cts",
+	"appId.__objectType": "Application",
+	"appId.name": "tenant1__App1",
+	"belongTo": null,
+	"category": null,
+	"createdDate": "2023-08-26 03:38:06",
+	"custom": true,
+	"id": "003f00000163JI6fSLNg",
+	"lastModifiedDate": "2023-09-04 08:59:09",
+	"name": "tenant1__GetData",
+	"parent": "003f00000161eKswIYLI",
+	"parent.__objectType": "ApplicationComponent",
+	"parent.name": "SyncLogic",
+	"protectMode": 0,
+	"seqNo": 1,
+	"type": "Flow",
+	"visibility": 0
+}

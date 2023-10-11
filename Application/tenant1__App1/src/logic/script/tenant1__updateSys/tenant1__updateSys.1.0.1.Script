@@ -1,0 +1,22 @@
+{
+	"active": true,
+	"belongTo": "000f000001601vs99Cts",
+	"belongTo.__objectType": "Application",
+	"belongTo.name": "tenant1__App1",
+	"catalogue": null,
+	"content": "// Here's your code.\r\nimport * as db from 'db';\r\nconsole.log(db.setup(\"SysParameter\").update(\"00250000015yrrdhQRii\", { \"value\": \"true\" }))",
+	"createdDate": "2023-09-04 04:49:02",
+	"custom": true,
+	"description": "",
+	"id": "001a0000016IKUjHzs4e",
+	"jscode": "\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\n// Here's your code.\r\nvar db = require(\"db\");\r\nconsole.log(db.setup(\"SysParameter\").update(\"00250000015yrrdhQRii\", { \"value\": \"true\" }));\r\n//# sourceMappingURL=tenant1__updateSys.js.map",
+	"label": null,
+	"lastModifiedDate": "2023-09-05 11:21:32",
+	"methodName": "",
+	"name": "tenant1__updateSys",
+	"overridable": true,
+	"protectMode": 0,
+	"sourceMap": "{\"version\":3,\"file\":\"tenant1__updateSys.js\",\"sourceRoot\":\"\",\"sources\":[\"tenant1__updateSys.ts\"],\"names\":[],\"mappings\":\";;AAAA,oBAAoB;AACpB,uBAAyB;AACzB,OAAO,CAAC,GAAG,CAAC,EAAE,CAAC,KAAK,CAAC,cAAc,CAAC,CAAC,MAAM,CAAC,sBAAsB,EAAE,EAAE,OAAO,EAAE,MAAM,EAAE,CAAC,CAAC,CAAA\"}",
+	"version": "1.0.1",
+	"visibility": 0
+}

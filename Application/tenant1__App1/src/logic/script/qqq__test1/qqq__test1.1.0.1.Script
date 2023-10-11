@@ -1,0 +1,22 @@
+{
+	"active": true,
+	"belongTo": "000f000001601vs99Cts",
+	"belongTo.__objectType": "Application",
+	"belongTo.name": "tenant1__App1",
+	"catalogue": null,
+	"content": "// Here's your code.",
+	"createdDate": "2023-09-05 11:22:14",
+	"custom": true,
+	"description": "",
+	"id": "001a0000016KRUqtDLk0",
+	"jscode": "// Here's your code.",
+	"label": null,
+	"lastModifiedDate": "2023-09-05 11:23:02",
+	"methodName": "",
+	"name": "qqq__test1",
+	"overridable": true,
+	"protectMode": 0,
+	"sourceMap": "",
+	"version": "1.0.1",
+	"visibility": 0
+}
