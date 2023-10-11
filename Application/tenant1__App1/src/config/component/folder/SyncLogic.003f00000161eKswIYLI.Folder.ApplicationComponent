@@ -1,0 +1,17 @@
+{
+	"appId": "000f000001601vs99Cts",
+	"appId.__objectType": "Application",
+	"appId.name": "tenant1__App1",
+	"belongTo": null,
+	"category": null,
+	"createdDate": "2023-08-25 03:37:23",
+	"custom": true,
+	"id": "003f00000161eKswIYLI",
+	"lastModifiedDate": "2023-08-25 03:37:23",
+	"name": "SyncLogic",
+	"parent": null,
+	"protectMode": 0,
+	"seqNo": null,
+	"type": "Folder",
+	"visibility": 0
+}

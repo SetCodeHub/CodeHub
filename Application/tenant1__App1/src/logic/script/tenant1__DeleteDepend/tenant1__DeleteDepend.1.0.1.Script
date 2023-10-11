@@ -1,0 +1,22 @@
+{
+	"active": false,
+	"belongTo": "000f000001601vs99Cts",
+	"belongTo.__objectType": "Application",
+	"belongTo.name": "tenant1__App1",
+	"catalogue": null,
+	"content": "// Here's your code.\r\nimport * as db from 'db';\r\nlet cond = {\r\n    conjunction: db.Conjunction.AND,\r\n    conditions: [\r\n        {\r\n            field: \"PackageId\",\r\n            operator: db.Operator.eq,\r\n            value: \"003G000001601vrjsuK8\",\r\n        }\r\n    ]\r\n};\r\ndb.setup(\"PackageContent\").deleteByCondition(cond)",
+	"createdDate": "2023-09-26 09:17:49",
+	"custom": true,
+	"description": "",
+	"id": "001a0000016t9aUebQtk",
+	"jscode": "\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\n// Here's your code.\r\nvar db = require(\"db\");\r\nvar cond = {\r\n    conjunction: db.Conjunction.AND,\r\n    conditions: [\r\n        {\r\n            field: \"PackageId\",\r\n            operator: db.Operator.eq,\r\n            value: \"003G000001601vrjsuK8\",\r\n        }\r\n    ]\r\n};\r\ndb.setup(\"PackageContent\").deleteByCondition(cond);\r\n//# sourceMappingURL=tenant1__DeleteDepend.js.map",
+	"label": null,
+	"lastModifiedDate": "2023-09-26 09:19:05",
+	"methodName": "",
+	"name": "tenant1__DeleteDepend",
+	"overridable": true,
+	"protectMode": 0,
+	"sourceMap": "{\"version\":3,\"file\":\"tenant1__DeleteDepend.js\",\"sourceRoot\":\"\",\"sources\":[\"tenant1__DeleteDepend.ts\"],\"names\":[],\"mappings\":\";;AAAA,oBAAoB;AACpB,uBAAyB;AACzB,IAAI,IAAI,GAAG;IACP,WAAW,EAAE,EAAE,CAAC,WAAW,CAAC,GAAG;IAC/B,UAAU,EAAE;QACR;YACI,KAAK,EAAE,WAAW;YAClB,QAAQ,EAAE,EAAE,CAAC,QAAQ,CAAC,EAAE;YACxB,KAAK,EAAE,sBAAsB;SAChC;KACJ;CACJ,CAAC;AACF,EAAE,CAAC,KAAK,CAAC,gBAAgB,CAAC,CAAC,iBAAiB,CAAC,IAAI,CAAC,CAAA\"}",
+	"version": "1.0.1",
+	"visibility": 0
+}

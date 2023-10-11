@@ -1,0 +1,22 @@
+{
+	"active": false,
+	"belongTo": "000f000001601vs99Cts",
+	"belongTo.__objectType": "Application",
+	"belongTo.name": "tenant1__App1",
+	"catalogue": null,
+	"content": "// Here's your code.",
+	"createdDate": "2023-10-09 08:29:31",
+	"custom": true,
+	"description": "",
+	"id": "001a0000017Eft4ElFuC",
+	"jscode": "// Here's your code.",
+	"label": null,
+	"lastModifiedDate": "2023-10-09 08:29:31",
+	"methodName": "",
+	"name": "tenant1__createFlow",
+	"overridable": true,
+	"protectMode": 0,
+	"sourceMap": "",
+	"version": "1.0.1",
+	"visibility": 0
+}

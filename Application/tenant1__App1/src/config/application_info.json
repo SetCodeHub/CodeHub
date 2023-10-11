@@ -1,0 +1,21 @@
+{
+	"active": true,
+	"belongTo": null,
+	"category": "",
+	"coreVersion": "1.3.11",
+	"createdDate": "2023-08-24 04:12:23",
+	"custom": true,
+	"defaultTabId.__objectType": "Tab",
+	"defaultTabId.name": "tenant1__App1_home",
+	"description": "",
+	"id": "000f000001601vs99Cts",
+	"label": "App1",
+	"logo": "",
+	"name": "tenant1__App1",
+	"protectMode": 0,
+	"publishVersion": null,
+	"theme": null,
+	"type": "Custom Application",
+	"type.name": "Custom Application",
+	"visibility": 0
+}

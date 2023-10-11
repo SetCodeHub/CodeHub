@@ -1,0 +1,28 @@
+{
+	"belongTo": null,
+	"content": {
+		"name": "",
+		"type": "",
+		"view": {
+			"fields": [
+				"name",
+				"tenant1__text1__CST"
+			],
+			"name": "__layout__tenant1__AppObject__CST__detail"
+		}
+	},
+	"createdDate": "2023-08-24 08:58:03",
+	"custom": true,
+	"description": "Object detail layout",
+	"id": "000D00000160MLb4w6Fs",
+	"label": "AppObject Detail",
+	"lastModifiedDate": "2023-08-24 09:06:26",
+	"name": "AppObject Detail",
+	"objectId": "cust00000160MLawzKc4",
+	"objectId.__objectType": "Object",
+	"objectId.name": "tenant1__AppObject__CST",
+	"protectMode": 0,
+	"type": "ObjectDetailLayout",
+	"type.name": "ObjectDetailLayout",
+	"visibility": 0
+}
