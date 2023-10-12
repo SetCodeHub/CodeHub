@@ -1,0 +1,33 @@
+swagger: "2.0"
+info:
+    description: OPEN API Swagger - 2.0
+    version: 1.0.0
+    title: Custom API Document
+schemes:
+    - http
+consumes:
+    - application/json
+produces:
+    - application/json
+paths:
+    /service/tenant1__App1/1.0.0/createFlow:
+        post:
+            tags:
+                - tenant1__createFlowTest
+            operationId: createFlow
+            responses:
+                200:
+                    description: 请求成功
+                    schema:
+                        $ref: '#/definitions/createFlow_Response'
+                400:
+                    description: 错误请求
+definitions:
+    createFlow_Response:
+        description: definition for responses in createFlow
+        required:
+            - result
+        type: object
+        properties:
+            result:
+                type: string

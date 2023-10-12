@@ -1,0 +1,19 @@
+{
+	"appId": "000f000001601vs99Cts",
+	"appId.__objectType": "Application",
+	"appId.name": "tenant1__App1",
+	"belongTo": null,
+	"category": null,
+	"createdDate": "2023-09-26 09:17:49",
+	"custom": true,
+	"id": "003f0000016t9aXEhCG8",
+	"lastModifiedDate": "2023-09-26 09:17:49",
+	"name": "tenant1__DeleteDepend",
+	"parent": "003f000000kxaz1iXBOi",
+	"parent.__objectType": "ApplicationComponent",
+	"parent.name": "",
+	"protectMode": 0,
+	"seqNo": null,
+	"type": "Script",
+	"visibility": 0
+}

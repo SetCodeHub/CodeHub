@@ -1,0 +1,30 @@
+{
+	"belongTo": null,
+	"category": "",
+	"createdDate": "2023-10-09 08:35:19",
+	"custom": true,
+	"customAPIs": [
+		{
+			"belongTo": null,
+			"createdDate": "2023-10-09 08:35:52",
+			"custom": true,
+			"id": "00350000017EgLCmIHtw",
+			"lastModifiedDate": "2023-10-09 08:35:52",
+			"method": "POST",
+			"name": null,
+			"permission": "CreateFlow",
+			"protectMode": 0,
+			"url": "/service/tenant1__App1/1.0.0/createFlow",
+			"visibility": 0
+		}
+	],
+	"description": "",
+	"id": "00340000017EgImFDN6e",
+	"label": "CreateFlow",
+	"lastModifiedDate": "2023-10-09 08:35:19",
+	"name": "CreateFlow",
+	"newPermission": false,
+	"parent": "",
+	"protectMode": 0,
+	"visibility": 0
+}

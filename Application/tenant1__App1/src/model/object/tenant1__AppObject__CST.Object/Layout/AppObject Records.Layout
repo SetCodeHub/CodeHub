@@ -1,0 +1,27 @@
+{
+	"belongTo": null,
+	"content": {
+		"name": "",
+		"type": "",
+		"view": {
+			"fields": [
+				"name"
+			],
+			"name": "__layout__tenant1__AppObject__CST__records"
+		}
+	},
+	"createdDate": "2023-08-24 08:58:03",
+	"custom": true,
+	"description": "Object records layout",
+	"id": "000D00000160MLb5VIW0",
+	"label": "AppObject Records",
+	"lastModifiedDate": "2023-08-24 08:58:03",
+	"name": "AppObject Records",
+	"objectId": "cust00000160MLawzKc4",
+	"objectId.__objectType": "Object",
+	"objectId.name": "tenant1__AppObject__CST",
+	"protectMode": 0,
+	"type": "ObjectRecordsLayout",
+	"type.name": "ObjectRecordsLayout",
+	"visibility": 0
+}
