@@ -1,0 +1,22 @@
+{
+	"appId": "000f0000016VhtcvKRbk",
+	"appId.__objectType": "Application",
+	"appId.name": "CUBECI__kwtest",
+	"belongTo": null,
+	"createdDate": "2023-09-12 06:15:23",
+	"custom": true,
+	"description": "The home tab.",
+	"id": "001u0000016VhtdPPvOa",
+	"isLeaf": true,
+	"label": "Home",
+	"lastModifiedDate": "2023-09-12 06:15:23",
+	"logo": "menuicon icon-home",
+	"name": "home",
+	"parentMenu": null,
+	"protectMode": 0,
+	"sequenceNo": null,
+	"tabId": "001g0000000000000000",
+	"tabId.__objectType": "Tab",
+	"tabId.name": "Home",
+	"visibility": 0
+}

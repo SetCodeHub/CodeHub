@@ -1,0 +1,17 @@
+{
+	"appId": "000f0000016VhtcvKRbk",
+	"appId.__objectType": "Application",
+	"appId.name": "CUBECI__kwtest",
+	"belongTo": null,
+	"category": null,
+	"createdDate": "2023-09-12 06:16:02",
+	"custom": true,
+	"id": "003f0000016VhwVGFJKq",
+	"lastModifiedDate": "2023-09-12 06:16:02",
+	"name": "model",
+	"parent": null,
+	"protectMode": 0,
+	"seqNo": null,
+	"type": "Folder",
+	"visibility": 0
+}
