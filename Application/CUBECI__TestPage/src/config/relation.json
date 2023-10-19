@@ -1,0 +1,26 @@
+[
+	{
+		"appId": "000f0000015eHepHao0e",
+		"appId.__objectType": "Application",
+		"appId.name": "CUBECI__TestPage",
+		"appServiceRelation": 0,
+		"belongTo": null,
+		"createdDate": "2023-09-01 09:35:05",
+		"custom": true,
+		"id": "003V0000016DgDzFlGm8",
+		"lastModifiedDate": "2023-09-01 09:35:05",
+		"name": null,
+		"protectMode": 0,
+		"publishVersion": "",
+		"sequenceNo": 0,
+		"serviceDescription": "",
+		"serviceId": "00060000016DfGfHmXMu",
+		"serviceId.__objectType": "Service",
+		"serviceId.name": "CUBECI__testAppdep",
+		"serviceLabel": "testAppdep",
+		"serviceVersion": 2,
+		"skipCheck": false,
+		"versionRules": "",
+		"visibility": 0
+	}
+]

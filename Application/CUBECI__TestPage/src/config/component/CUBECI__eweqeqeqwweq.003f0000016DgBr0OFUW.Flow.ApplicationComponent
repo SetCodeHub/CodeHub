@@ -1,0 +1,19 @@
+{
+	"appId": "000f0000015eHepHao0e",
+	"appId.__objectType": "Application",
+	"appId.name": "CUBECI__TestPage",
+	"belongTo": null,
+	"category": null,
+	"createdDate": "2023-09-01 09:34:36",
+	"custom": true,
+	"id": "003f0000016DgBr0OFUW",
+	"lastModifiedDate": "2023-09-01 09:34:36",
+	"name": "CUBECI__eweqeqeqwweq",
+	"parent": "003f0000015vfwIHqacC",
+	"parent.__objectType": "ApplicationComponent",
+	"parent.name": "test",
+	"protectMode": 0,
+	"seqNo": null,
+	"type": "Flow",
+	"visibility": 0
+}

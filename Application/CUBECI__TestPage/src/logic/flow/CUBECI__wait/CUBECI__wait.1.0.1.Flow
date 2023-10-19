@@ -1,0 +1,162 @@
+{
+	"active": false,
+	"belongTo": "000f0000015eHepHao0e",
+	"belongTo.__objectType": "Application",
+	"belongTo.name": "CUBECI__TestPage",
+	"catalogue": "",
+	"compilerVersion": 0,
+	"createdDate": "2023-08-29 03:44:45",
+	"custom": true,
+	"description": "",
+	"event": "",
+	"eventCriteria": "",
+	"extRef": "",
+	"id": "000y00000168IThbtvuK",
+	"interviewLabel": "wait {!$Flow.CurrentDateTime}",
+	"jsonDefinition": {
+		"active": false,
+		"assignments": [
+			{
+				"connector": "",
+				"description": "",
+				"externalUsed": false,
+				"label": "Assignment0",
+				"locationX": 475,
+				"name": "Assignment0"
+			}
+		],
+		"catalogue": "",
+		"config": null,
+		"description": "",
+		"extRef": "",
+		"externalUsed": false,
+		"id": "",
+		"interviewLabel": "wait {!$Flow.CurrentDateTime}",
+		"label": "wait",
+		"lastModifiedBy": "10gd00000114v0UMyIYy",
+		"localUrl": "/run/CUBECI__wait",
+		"name": "CUBECI__wait",
+		"noMatchedError": false,
+		"overridable": true,
+		"private": false,
+		"processType": "Autolaunched Flow",
+		"startConnectPoint": "{\"fromPort\":\"R1\",\"toPort\":\"L1\",\"joints\":[\"49 0\",\"101 0\"]}",
+		"startElement": "Wait0",
+		"status": "Pass",
+		"strictInputs": true,
+		"timer": "",
+		"timerCriteria": null,
+		"version": "1.0.1",
+		"waits": [
+			{
+				"defaultConnector": "",
+				"defaultConnectorLabel": "[Default Path]",
+				"defaultConnectorPoint": "{\"fromPort\":\"R1\",\"toPort\":\"L1\",\"joints\":[\"199 0\",\"276 0\"]}",
+				"description": "",
+				"externalUsed": false,
+				"faultConnector": "",
+				"label": "Wait0",
+				"locationX": 150,
+				"name": "Wait0",
+				"waitEvents": [
+					{
+						"connector": "Wait1",
+						"connectorPoint": "{\"fromPort\":\"R1\",\"toPort\":\"L1\",\"joints\":[\"199 0\",\"276 0\"]}",
+						"criteria": "",
+						"event": "EV_ABSOLUTE_TIME_ALERT",
+						"externalUsed": false,
+						"inputAssignments": [
+							{
+								"externalUsed": false,
+								"input": "baseTime",
+								"name": "",
+								"value": "{!$Flow.CurrentDateTime}",
+								"valueType": ""
+							},
+							{
+								"externalUsed": false,
+								"input": "offsetTime",
+								"name": "",
+								"value": "0",
+								"valueType": ""
+							},
+							{
+								"externalUsed": false,
+								"input": "offsetUnit",
+								"name": "",
+								"value": "Seconds",
+								"valueType": ""
+							}
+						],
+						"label": "event0",
+						"name": "event0"
+					}
+				]
+			},
+			{
+				"defaultConnector": "Assignment0",
+				"defaultConnectorLabel": "[Default Path]",
+				"defaultConnectorPoint": "{\"fromPort\":\"R1\",\"toPort\":\"L1\",\"joints\":[]}",
+				"description": "",
+				"externalUsed": false,
+				"faultConnector": "",
+				"label": "Wait1",
+				"locationX": 325,
+				"name": "Wait1",
+				"waitEvents": [
+					{
+						"connector": "",
+						"criteria": "",
+						"event": "EV_ABSOLUTE_TIME_ALERT",
+						"externalUsed": false,
+						"inputAssignments": [
+							{
+								"externalUsed": false,
+								"input": "baseTime",
+								"name": "",
+								"value": "{!$Flow.CurrentDateTime}",
+								"valueType": ""
+							},
+							{
+								"externalUsed": false,
+								"input": "offsetTime",
+								"name": "",
+								"value": "1",
+								"valueType": ""
+							},
+							{
+								"externalUsed": false,
+								"input": "offsetUnit",
+								"name": "",
+								"value": "Seconds",
+								"valueType": ""
+							}
+						],
+						"label": "event01",
+						"name": "event01"
+					}
+				]
+			}
+		],
+		"writeHistory": false
+	},
+	"label": "wait",
+	"lastModifiedDate": "2023-08-29 04:53:28",
+	"localUrl": "/run/CUBECI__wait",
+	"name": "CUBECI__wait",
+	"overridable": true,
+	"private": false,
+	"processType": "Autolaunched Flow",
+	"processType.name": "Autolaunched Flow",
+	"protectMode": 0,
+	"published": false,
+	"reserved": 0,
+	"startElement": "Wait0",
+	"status": "Pass",
+	"status.name": "Pass",
+	"timer": "",
+	"timerCriteria": null,
+	"usingSLA": null,
+	"version": "1.0.1",
+	"visibility": 0
+}

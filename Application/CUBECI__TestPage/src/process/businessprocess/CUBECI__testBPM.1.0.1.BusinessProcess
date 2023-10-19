@@ -1,0 +1,226 @@
+{
+	"active": true,
+	"belongTo": "000f0000015eHepHao0e",
+	"belongTo.__objectType": "Application",
+	"belongTo.name": "CUBECI__TestPage",
+	"compilerVer": 2,
+	"config": {
+		"cancelable": false,
+		"noCancelAfterElem": "",
+		"noCancelAfterElemLabel": "",
+		"sensitive": true
+	},
+	"createdDate": "2023-08-28 12:46:54",
+	"custom": true,
+	"description": "",
+	"extRef": "",
+	"id": "001L00000167GJdWLlT6",
+	"instanceLabel": "",
+	"jsonDefinition": {
+		"active": false,
+		"catchEvents": [
+			{
+				"connector": "userTask",
+				"connectorPoint": "{\"fromPort\":\"R1\",\"toPort\":\"L1\",\"joints\":[\"-26 150\"]}",
+				"criteria": "",
+				"event": "EV_ABSOLUTE_TIME_ALERT",
+				"inputAssignments": [
+					{
+						"externalUsed": false,
+						"input": "baseTime",
+						"name": "",
+						"value": "{!$Flow.CurrentDateTime}",
+						"valueType": ""
+					},
+					{
+						"externalUsed": false,
+						"input": "offsetTime",
+						"name": "",
+						"value": "1",
+						"valueType": ""
+					},
+					{
+						"externalUsed": false,
+						"input": "offsetUnit",
+						"name": "",
+						"value": "Minutes",
+						"valueType": ""
+					}
+				],
+				"label": "Timer Catch",
+				"locationX": -75,
+				"locationY": 150,
+				"name": "timerCatch",
+				"type": "Timer"
+			}
+		],
+		"description": "",
+		"endEvents": [
+			{
+				"label": "End",
+				"locationX": 275,
+				"locationY": 100,
+				"name": "end",
+				"type": "End"
+			}
+		],
+		"extRef": "",
+		"id": "",
+		"instanceLabel": "",
+		"interfaces": [
+			{
+				"operation": "start"
+			}
+		],
+		"label": "testBPM",
+		"laneSet": {
+			"label": "",
+			"lanes": [
+				{
+					"color": "#6fe4d1",
+					"elements": [
+						"start",
+						"converge",
+						"diverge",
+						"userTask1",
+						"timerCatch",
+						"userTask",
+						"end"
+					],
+					"height": 200,
+					"label": "lane",
+					"name": "lane"
+				}
+			],
+			"name": ""
+		},
+		"lastModifiedBy": "10gd00000114v0UMyIYy",
+		"localUrl": "",
+		"name": "CUBECI__testBPM",
+		"noMatchedError": false,
+		"overridable": true,
+		"parallelGateways": [
+			{
+				"connectors": [
+					{
+						"criteria": "",
+						"isDefault": false,
+						"name": "gw",
+						"to": "userTask1",
+						"toPoint": "{\"fromPort\":\"R1\",\"toPort\":\"L1\",\"joints\":[]}"
+					},
+					{
+						"criteria": "",
+						"isDefault": false,
+						"name": "gw1",
+						"to": "timerCatch",
+						"toPoint": "{\"fromPort\":\"R2\",\"toPort\":\"L1\",\"joints\":[\"-126 113\",\"-120 113\",\"-120 150\"]}"
+					}
+				],
+				"direction": "Diverging",
+				"label": "Diverge",
+				"locationX": -175,
+				"locationY": 100,
+				"name": "diverge",
+				"partner": "converge"
+			},
+			{
+				"connectors": [
+					{
+						"criteria": "",
+						"isDefault": false,
+						"name": "gw2",
+						"to": "end",
+						"toPoint": "{\"fromPort\":\"R1\",\"toPort\":\"L1\",\"joints\":[]}"
+					}
+				],
+				"direction": "Converging",
+				"label": "Converge",
+				"locationX": 150,
+				"locationY": 100,
+				"name": "converge",
+				"partner": "diverge"
+			}
+		],
+		"startEvents": [
+			{
+				"connector": "diverge",
+				"connectorPoint": "{\"fromPort\":\"R1\",\"toPort\":\"L1\",\"joints\":[]}",
+				"label": "Start",
+				"locationX": -300,
+				"locationY": 100,
+				"name": "start",
+				"type": "Start"
+			}
+		],
+		"startType": "",
+		"status": "Error",
+		"userTasks": [
+			{
+				"approvalType": "Single",
+				"autoApproval": {
+					"approvedByBPStarter": false,
+					"approvedByPreTaskOwner": false
+				},
+				"connector": "converge",
+				"connectorPoint": "{\"fromPort\":\"R1\",\"toPort\":\"L1\",\"joints\":[]}",
+				"groupAsSingleParticipant": false,
+				"label": "User Task",
+				"locationY": 75,
+				"managerLevel": 1,
+				"name": "userTask1",
+				"priority": 3,
+				"render": "{\"app\":\"CUBECI__TestPage\",\"page\":\"TestPAge\"}",
+				"renderType": "Page",
+				"riseIfManagerNotExist": true,
+				"routeType": "Router",
+				"router": {
+					"defaultRouteTo": "",
+					"defaultRouteType": "Current user",
+					"externalUsed": false,
+					"name": ""
+				}
+			},
+			{
+				"approvalType": "Single",
+				"autoApproval": {
+					"approvedByBPStarter": false,
+					"approvedByPreTaskOwner": false
+				},
+				"connector": "converge",
+				"connectorPoint": "{\"fromPort\":\"R1\",\"toPort\":\"L2\",\"joints\":[\"91.5 150\",\"105.8 150\",\"105.8 113\"]}",
+				"groupAsSingleParticipant": false,
+				"label": "User Task",
+				"locationX": 25,
+				"locationY": 150,
+				"managerLevel": 1,
+				"name": "userTask",
+				"priority": 3,
+				"riseIfManagerNotExist": true,
+				"routeType": "Router",
+				"router": {
+					"defaultRouteTo": "",
+					"defaultRouteType": "Current user",
+					"externalUsed": false,
+					"name": ""
+				}
+			}
+		],
+		"version": "1.0.1"
+	},
+	"label": "testBPM",
+	"lastModifiedDate": "2023-08-28 12:58:07",
+	"localUrl": "",
+	"logo": null,
+	"name": "CUBECI__testBPM",
+	"overridable": true,
+	"protectMode": 0,
+	"published": true,
+	"startStage": null,
+	"startType": "",
+	"status": "Pass",
+	"status.name": "Pass",
+	"version": "1.0.1",
+	"visibility": 0,
+	"webSite": null
+}

@@ -1,0 +1,33 @@
+{
+	"belongTo": null,
+	"createdDate": "2023-08-11 01:45:06",
+	"custom": true,
+	"extTenantID": 1,
+	"homePage": "/magno/render/000000000114v0UMyIYz/CUBECI__TestPage",
+	"id": "001S0000015eHeomMvhY",
+	"lastModifiedDate": "2023-08-11 01:45:43",
+	"name": "CUBECI__TestPage_000000000114v0UMyIYz",
+	"pageActions": [
+		{
+			"belongTo": null,
+			"createdDate": "2023-08-11 01:45:43",
+			"custom": true,
+			"description": "",
+			"id": "001T0000015eHhYSWKSe",
+			"lastModifiedDate": "2023-08-11 01:45:43",
+			"name": "TestPAge",
+			"pageNo": "1",
+			"parent": "001S0000015eHeomMvhY",
+			"parent.__objectType": "WebSite",
+			"parent.name": "CUBECI__TestPage_000000000114v0UMyIYz",
+			"protectMode": 0,
+			"url": "/magno/render/000000000114v0UMyIYz/CUBECI__TestPage/TestPAge",
+			"version": "202308110945",
+			"visibility": 0
+		}
+	],
+	"parentID": null,
+	"protectMode": 0,
+	"siteID": 14811,
+	"visibility": 0
+}

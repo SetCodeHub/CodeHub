@@ -1,0 +1,19 @@
+{
+	"appId": "000f0000015eHepHao0e",
+	"appId.__objectType": "Application",
+	"appId.name": "CUBECI__TestPage",
+	"belongTo": null,
+	"category": null,
+	"createdDate": "2023-08-28 12:46:54",
+	"custom": true,
+	"id": "003f00000167GJe481wm",
+	"lastModifiedDate": "2023-08-28 12:46:54",
+	"name": "CUBECI__testBPM",
+	"parent": "003f0000015vfwIHqacC",
+	"parent.__objectType": "ApplicationComponent",
+	"parent.name": "test",
+	"protectMode": 0,
+	"seqNo": null,
+	"type": "BusinessProcess",
+	"visibility": 0
+}

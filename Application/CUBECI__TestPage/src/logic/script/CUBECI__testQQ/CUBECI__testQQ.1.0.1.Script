@@ -1,0 +1,22 @@
+{
+	"active": true,
+	"belongTo": "000f0000015eHepHao0e",
+	"belongTo.__objectType": "Application",
+	"belongTo.name": "CUBECI__TestPage",
+	"catalogue": null,
+	"content": "// Here's your code.",
+	"createdDate": "2023-08-31 12:26:52",
+	"custom": true,
+	"description": "",
+	"id": "001a0000016CDb1q1BfE",
+	"jscode": "// Here's your code.",
+	"label": null,
+	"lastModifiedDate": "2023-08-31 12:27:13",
+	"methodName": "",
+	"name": "CUBECI__testQQ",
+	"overridable": true,
+	"protectMode": 0,
+	"sourceMap": "",
+	"version": "1.0.1",
+	"visibility": 0
+}
