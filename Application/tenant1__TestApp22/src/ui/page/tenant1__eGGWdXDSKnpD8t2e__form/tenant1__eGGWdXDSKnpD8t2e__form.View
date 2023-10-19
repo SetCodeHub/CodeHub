@@ -1,0 +1,724 @@
+{
+	"active": false,
+	"application": "000f0000016nofmB9k6i",
+	"application.__objectType": "Application",
+	"application.name": "tenant1__TestApp22",
+	"belongTo": "000f0000016nofmB9k6i",
+	"belongTo.__objectType": "Application",
+	"belongTo.name": "tenant1__TestApp22",
+	"createdDate": "2023-10-14 02:42:24",
+	"custom": true,
+	"customStyle": "",
+	"description": null,
+	"events": [
+		{
+			"action": [
+				{
+					"options": {
+						"content": ""
+					},
+					"type": "$core.execJSCode"
+				}
+			],
+			"belongTo": null,
+			"createdDate": "2023-10-14 02:42:32",
+			"custom": true,
+			"id": "003h0000017MZbxLtQ2a",
+			"lastModifiedDate": "2023-10-14 02:42:32",
+			"name": "Desig_on-load_1",
+			"protectMode": 0,
+			"view": "003g0000017MZbMQ3Jk8",
+			"view.__objectType": "View",
+			"view.name": "tenant1__eGGWdXDSKnpD8t2e__form",
+			"visibility": 0
+		},
+		{
+			"action": [
+				{
+					"options": {
+						"content": ""
+					},
+					"type": "$core.execJSCode"
+				}
+			],
+			"belongTo": null,
+			"createdDate": "2023-10-14 02:42:32",
+			"custom": true,
+			"id": "003h0000017MZbxLtQ2b",
+			"lastModifiedDate": "2023-10-14 02:42:32",
+			"name": "butto_click_submit",
+			"protectMode": 0,
+			"view": "003g0000017MZbMQ3Jk8",
+			"view.__objectType": "View",
+			"view.name": "tenant1__eGGWdXDSKnpD8t2e__form",
+			"visibility": 0
+		},
+		{
+			"action": [
+				{
+					"options": {
+						"content": ""
+					},
+					"type": "$core.execJSCode"
+				}
+			],
+			"belongTo": null,
+			"createdDate": "2023-10-14 02:42:32",
+			"custom": true,
+			"id": "003h0000017MZbxLtQ2c",
+			"lastModifiedDate": "2023-10-14 02:42:32",
+			"name": "butto_click_reset",
+			"protectMode": 0,
+			"view": "003g0000017MZbMQ3Jk8",
+			"view.__objectType": "View",
+			"view.name": "tenant1__eGGWdXDSKnpD8t2e__form",
+			"visibility": 0
+		}
+	],
+	"id": "003g0000017MZbMQ3Jk8",
+	"label": "流程1 - 数据管理",
+	"lastModifiedDate": "2023-10-14 02:42:32",
+	"layer": null,
+	"libraries": "[]",
+	"logo": null,
+	"name": "tenant1__eGGWdXDSKnpD8t2e__form",
+	"overridable": true,
+	"pageType": "form",
+	"protectMode": 0,
+	"referencePageId": null,
+	"type": "Page",
+	"version": "1.0.2",
+	"viewData": {
+		"elements": [
+			{
+				"attrs": {},
+				"dataBinding": {
+					"default": {
+						"model": [
+							"form_0"
+						]
+					},
+					"readonly": {
+						"model": [
+							"custModel",
+							"readonly"
+						]
+					}
+				},
+				"elements": [
+					{
+						"attrs": {},
+						"elements": [
+							{
+								"attrs": {},
+								"elements": [
+									{
+										"dataBinding": {
+											"default": {
+												"model": [
+													"form_0",
+													"tenant1__text__CST"
+												]
+											}
+										},
+										"key": 1866976480012602,
+										"props": {
+											"dataField": "tenant1__text__CST",
+											"dataFieldType": "xs_string",
+											"label": "名称",
+											"maxlength": 85,
+											"name": "input_1697251345466",
+											"placeholder": "{\"en_US\":\"Please enter\",\"zh_CN\":\"请输入\"}",
+											"rangeValidation": true,
+											"readonly": false,
+											"required": false,
+											"showAsLink": false,
+											"type": "text"
+										},
+										"type": "input"
+									}
+								],
+								"key": 1866976480012601,
+								"on": {},
+								"props": {
+									"align": "left",
+									"lg": 24,
+									"md": 24,
+									"name": "col_3",
+									"sm": 24,
+									"xs": 24
+								},
+								"type": "col"
+							}
+						],
+						"key": 1866976480012600,
+						"on": {},
+						"props": {
+							"layout": {
+								"pad": {
+									"key": "pad1",
+									"value": [
+										24
+									]
+								},
+								"pc": {
+									"key": "one",
+									"value": [
+										24
+									]
+								},
+								"phone": {
+									"key": "phone1",
+									"value": [
+										24
+									]
+								}
+							},
+							"name": "row_0"
+						},
+						"type": "row"
+					},
+					{
+						"attrs": {},
+						"elements": [
+							{
+								"attrs": {},
+								"elements": [
+									{
+										"attrs": {},
+										"dataBinding": {
+											"default": {
+												"model": [
+													"form_0",
+													"tenant1__fjSF__CST"
+												]
+											}
+										},
+										"elements": [],
+										"hasCustomPanel": null,
+										"key": 1697251346788000,
+										"on": {},
+										"props": {
+											"dataField": "tenant1__fjSF__CST",
+											"init": true,
+											"label": "单行文本",
+											"maxlength": 85,
+											"name": "input_1697251345467",
+											"placeholder": "{\"en_US\":\"Please enter\",\"zh_CN\":\"请输入\"}",
+											"preField": "tenant1__fjSF__CST",
+											"rangeValidation": true,
+											"type": "text"
+										},
+										"type": "input",
+										"widget2": false
+									}
+								],
+								"hasCustomPanel": null,
+								"key": 1697251346788001,
+								"on": {},
+								"props": {
+									"align": "left",
+									"lg": 24,
+									"md": 24,
+									"name": "col_4",
+									"sm": 24,
+									"xs": 24
+								},
+								"type": "col",
+								"widget2": false
+							}
+						],
+						"hasCustomPanel": null,
+						"key": 1697251346788002,
+						"on": {},
+						"props": {
+							"layout": {
+								"pc": {
+									"key": "custom",
+									"value": [
+										24
+									]
+								},
+								"phone": {
+									"key": "one",
+									"value": [
+										24
+									]
+								}
+							},
+							"name": "row_3"
+						},
+						"type": "row",
+						"widget2": false
+					},
+					{
+						"attrs": {},
+						"elements": [
+							{
+								"attrs": {},
+								"elements": [
+									{
+										"dataBinding": {
+											"default": {
+												"model": [
+													"form_0",
+													"tenant1__datetime__CST"
+												]
+											}
+										},
+										"key": 1866976480012605,
+										"props": {
+											"clearable": true,
+											"dataField": "tenant1__datetime__CST",
+											"dataFieldType": "xs_dateTime",
+											"format": "yyyy-MM-dd",
+											"label": "日期",
+											"name": "datepicker_1697251345466",
+											"placeholder": "{\"en_US\":\"Please select\",\"zh_CN\":\"请选择\"}",
+											"readonly": false,
+											"required": false,
+											"transfer": true,
+											"type": "datetime"
+										},
+										"type": "datepicker"
+									}
+								],
+								"key": 1866976480012604,
+								"on": {},
+								"props": {
+									"align": "left",
+									"lg": 24,
+									"md": 24,
+									"name": "col_3",
+									"sm": 24,
+									"xs": 24
+								},
+								"type": "col"
+							}
+						],
+						"key": 1866976480012603,
+						"on": {},
+						"props": {
+							"layout": {
+								"pad": {
+									"key": "pad1",
+									"value": [
+										24
+									]
+								},
+								"pc": {
+									"key": "one",
+									"value": [
+										24
+									]
+								},
+								"phone": {
+									"key": "phone1",
+									"value": [
+										24
+									]
+								}
+							},
+							"name": "row_1"
+						},
+						"type": "row"
+					},
+					{
+						"attrs": {},
+						"elements": [
+							{
+								"attrs": {},
+								"elements": [
+									{
+										"dataBinding": {
+											"default": {
+												"model": [
+													"form_0",
+													"tenant1__descript__CST"
+												]
+											}
+										},
+										"key": 1866976480012608,
+										"props": {
+											"dataField": "tenant1__descript__CST",
+											"dataFieldType": "xs_string_clob",
+											"label": "描述",
+											"name": "textarea_1697251345466",
+											"placeholder": "{\"en_US\":\"Please enter\",\"zh_CN\":\"请输入\"}",
+											"readonly": false,
+											"required": false,
+											"rows": 4
+										},
+										"type": "textarea"
+									}
+								],
+								"key": 1866976480012607,
+								"on": {},
+								"props": {
+									"align": "left",
+									"lg": 24,
+									"md": 24,
+									"name": "col_3",
+									"sm": 24,
+									"xs": 24
+								},
+								"type": "col"
+							}
+						],
+						"key": 1866976480012606,
+						"on": {},
+						"props": {
+							"layout": {
+								"pad": {
+									"key": "pad1",
+									"value": [
+										24
+									]
+								},
+								"pc": {
+									"key": "one",
+									"value": [
+										24
+									]
+								},
+								"phone": {
+									"key": "phone1",
+									"value": [
+										24
+									]
+								}
+							},
+							"name": "row_2"
+						},
+						"type": "row"
+					},
+					{
+						"attrs": {},
+						"dataBinding": {
+							"hidden": {
+								"model": [
+									"custModel",
+									"buttonHidden"
+								]
+							}
+						},
+						"elements": [
+							{
+								"attrs": {},
+								"dataBinding": {
+									"hidden": {
+										"model": [
+											"custModel",
+											"submitBtnHidden"
+										]
+									}
+								},
+								"elements": [],
+								"key": 1535946611880036,
+								"on": {
+									"click": "butto_click_submit"
+								},
+								"props": {
+									"hidden": true,
+									"name": "button_0",
+									"style": "margin-left:20px;",
+									"text": "{\"en_US\":\"Submit\",\"zh_CN\":\"提交\"}",
+									"type": "primary"
+								},
+								"type": "button"
+							}
+						],
+						"key": 1535946611880038,
+						"on": {},
+						"props": {
+							"align": "right",
+							"bottom": true,
+							"class": "form-buttons-container",
+							"name": "container_1",
+							"singleline": true
+						},
+						"type": "container"
+					}
+				],
+				"key": 2,
+				"on": {},
+				"props": {
+					"dataSource": "tenant1__004P0000017MZbOwAhHc_VIEW",
+					"dataSourceId": "004P0000017MZbOwAhHc",
+					"dataSourceType": "Entity",
+					"enableIcon": true,
+					"enableNo": false,
+					"labelPosition": "top",
+					"labelWidth": 120,
+					"layout": {
+						"key": "one_one_one",
+						"value": [
+							8,
+							8,
+							8
+						]
+					},
+					"name": "form_0"
+				},
+				"type": "form"
+			}
+		],
+		"key": 1,
+		"on": {
+			"on-load": "Desig_on-load_1"
+		},
+		"props": {
+			"name": "DesignerPage_1",
+			"screenType": "pc"
+		},
+		"type": "DesignerPage",
+		"version": "1.0.3"
+	},
+	"viewModel": {
+		"custModel": {
+			"actions": [],
+			"fields": [
+				{
+					"expand": true,
+					"highlightRow": false,
+					"id": "custModel_0",
+					"name": "custModel",
+					"rootInstanceId": "custModel",
+					"type": "static"
+				},
+				{
+					"expand": false,
+					"highlightRow": false,
+					"id": "custModel_1",
+					"name": "cancleBtnText",
+					"pId": "custModel_0",
+					"parentId": "custModel",
+					"rootInstanceId": "custModel",
+					"type": "xs_string"
+				},
+				{
+					"expand": false,
+					"highlightRow": false,
+					"id": "custModel_2",
+					"name": "readonly",
+					"pId": "custModel_0",
+					"parentId": "custModel",
+					"rootInstanceId": "custModel",
+					"type": "static"
+				},
+				{
+					"expand": false,
+					"highlightRow": false,
+					"id": "custModel_3",
+					"name": "submitBtnHidden",
+					"pId": "custModel_0",
+					"parentId": "custModel",
+					"rootInstanceId": "custModel",
+					"type": "static"
+				},
+				{
+					"expand": false,
+					"highlightRow": false,
+					"id": "custModel_4",
+					"name": "buttonHidden",
+					"pId": "custModel_0",
+					"parentId": "custModel",
+					"rootInstanceId": "custModel",
+					"type": "static"
+				},
+				{
+					"expand": false,
+					"highlightRow": false,
+					"id": "custModel_5",
+					"name": "cancleBtnHidden",
+					"pId": "custModel_0",
+					"parentId": "custModel",
+					"rootInstanceId": "custModel",
+					"type": "static"
+				}
+			]
+		},
+		"form_0": {
+			"actions": [
+				{
+					"input": [],
+					"method": "query",
+					"name": "query",
+					"output": [
+						{
+							"fieldName": "tenant1__text__CST",
+							"mappingField": "tenant1__text__CST"
+						},
+						{
+							"fieldName": "tenant1__fjSF__CST",
+							"mappingField": "tenant1__fjSF__CST"
+						},
+						{
+							"fieldName": "tenant1__datetime__CST",
+							"mappingField": "tenant1__datetime__CST"
+						},
+						{
+							"fieldName": "tenant1__descript__CST",
+							"mappingField": "tenant1__descript__CST"
+						}
+					],
+					"type": "view",
+					"uri": "tenant1__004P0000017MZbOwAhHc_VIEW"
+				},
+				{
+					"input": [
+						{
+							"fieldName": "tenant1__text__CST",
+							"mappingField": "tenant1__text__CST"
+						},
+						{
+							"fieldName": "tenant1__fjSF__CST",
+							"mappingField": "tenant1__fjSF__CST"
+						},
+						{
+							"fieldName": "tenant1__datetime__CST",
+							"mappingField": "tenant1__datetime__CST"
+						},
+						{
+							"fieldName": "tenant1__descript__CST",
+							"mappingField": "tenant1__descript__CST"
+						}
+					],
+					"method": "save",
+					"name": "save",
+					"output": [],
+					"type": "view",
+					"uri": "tenant1__004P0000017MZbOwAhHc_VIEW"
+				},
+				{
+					"input": [
+						{
+							"fieldName": "tenant1__text__CST",
+							"mappingField": "tenant1__text__CST"
+						},
+						{
+							"fieldName": "tenant1__fjSF__CST",
+							"mappingField": "tenant1__fjSF__CST"
+						},
+						{
+							"fieldName": "tenant1__datetime__CST",
+							"mappingField": "tenant1__datetime__CST"
+						},
+						{
+							"fieldName": "tenant1__descript__CST",
+							"mappingField": "tenant1__descript__CST"
+						}
+					],
+					"method": "delete",
+					"name": "delete",
+					"output": [],
+					"type": "view",
+					"uri": "tenant1__004P0000017MZbOwAhHc_VIEW"
+				},
+				{
+					"input": [],
+					"method": "count",
+					"name": "count",
+					"output": [],
+					"type": "view",
+					"uri": "tenant1__004P0000017MZbOwAhHc_VIEW"
+				}
+			],
+			"fields": [
+				{
+					"_uid": 0,
+					"defaultValue": {},
+					"expand": false,
+					"isRequired": false,
+					"label": "form_0",
+					"name": "form_0",
+					"orign": [
+						{
+							"mappingField": "tenant1__004P0000017MZbOwAhHc_VIEW",
+							"name": "tenant1__004P0000017MZbOwAhHc_VIEW",
+							"type": "view"
+						}
+					],
+					"rootInstanceId": "form_0",
+					"type": "view"
+				},
+				{
+					"_uid": 1,
+					"expand": false,
+					"isRequired": false,
+					"label": "名称",
+					"name": "tenant1__text__CST",
+					"orign": [
+						{
+							"mappingField": "tenant1__text__CST",
+							"name": "tenant1__004P0000017MZbOwAhHc_VIEW",
+							"type": "view"
+						}
+					],
+					"parentId": "form_0",
+					"rootInstanceId": "form_0",
+					"type": "xs_string"
+				},
+				{
+					"expand": false,
+					"label": "单行文本",
+					"name": "tenant1__fjSF__CST",
+					"orign": [
+						{
+							"mappingField": "tenant1__fjSF__CST",
+							"name": "tenant1__004P0000017MZbOwAhHc_VIEW",
+							"type": "view"
+						}
+					],
+					"parentId": "form_0",
+					"rootInstanceId": "form_0",
+					"type": "xs_string"
+				},
+				{
+					"_uid": 2,
+					"expand": false,
+					"isRequired": false,
+					"label": "日期",
+					"name": "tenant1__datetime__CST",
+					"orign": [
+						{
+							"mappingField": "tenant1__datetime__CST",
+							"name": "tenant1__004P0000017MZbOwAhHc_VIEW",
+							"type": "view"
+						}
+					],
+					"parentId": "form_0",
+					"rootInstanceId": "form_0",
+					"type": "xs_dateTime"
+				},
+				{
+					"_uid": 3,
+					"expand": false,
+					"isRequired": false,
+					"label": "描述",
+					"name": "tenant1__descript__CST",
+					"orign": [
+						{
+							"mappingField": "tenant1__descript__CST",
+							"name": "tenant1__004P0000017MZbOwAhHc_VIEW",
+							"type": "view"
+						}
+					],
+					"parentId": "form_0",
+					"rootInstanceId": "form_0",
+					"type": "xs_string_clob"
+				}
+			],
+			"mapping": [
+				{
+					"bindName": "tenant1__004P0000017MZbOwAhHc_VIEW",
+					"bindType": "view",
+					"exclude": "",
+					"include": "ALL",
+					"objectId": "cust0000017MZb702Jeq"
+				}
+			]
+		}
+	},
+	"visibility": 0
+}

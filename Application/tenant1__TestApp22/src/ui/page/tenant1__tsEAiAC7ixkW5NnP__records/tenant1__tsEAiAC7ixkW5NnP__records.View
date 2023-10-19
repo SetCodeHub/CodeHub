@@ -1,0 +1,1171 @@
+{
+	"active": false,
+	"application": "000f0000016nofmB9k6i",
+	"application.__objectType": "Application",
+	"application.name": "tenant1__TestApp22",
+	"belongTo": "000f0000016nofmB9k6i",
+	"belongTo.__objectType": "Application",
+	"belongTo.name": "tenant1__TestApp22",
+	"createdDate": "2023-10-14 02:41:29",
+	"custom": true,
+	"customStyle": ".newmodal .form-buttons-container{\n  display: none\n}",
+	"description": null,
+	"events": [
+		{
+			"action": [
+				{
+					"options": {
+						"content": "// Current Component\r\nlet _component = context.getCurrentComponent()\r\n\r\n// Current Form\r\nlet  _form = _component.getForm()\r\n\r\n_form.resetFields()\r\n"
+					},
+					"type": "$core.execJSCode"
+				}
+			],
+			"belongTo": null,
+			"createdDate": "2023-10-14 02:42:11",
+			"custom": true,
+			"id": "003h0000017MZaPGxUKe",
+			"lastModifiedDate": "2023-10-14 02:42:11",
+			"name": "button_16_click",
+			"protectMode": 0,
+			"view": "003g0000017MZXHnuLiK",
+			"view.__objectType": "View",
+			"view.name": "tenant1__tsEAiAC7ixkW5NnP__records",
+			"visibility": 0
+		},
+		{
+			"action": [
+				{
+					"options": {
+						"content": "$model.ref(\"showModal\").setData(false);\r\n// Reset\r\ncontext.$component.get(\"Detail\").resetFields();"
+					},
+					"type": "$core.execJSCode"
+				}
+			],
+			"belongTo": null,
+			"createdDate": "2023-10-14 02:42:11",
+			"custom": true,
+			"id": "003h0000017MZaPGxUKf",
+			"lastModifiedDate": "2023-10-14 02:42:11",
+			"name": "button_21_click",
+			"protectMode": 0,
+			"view": "003g0000017MZXHnuLiK",
+			"view.__objectType": "View",
+			"view.name": "tenant1__tsEAiAC7ixkW5NnP__records",
+			"visibility": 0
+		},
+		{
+			"action": [
+				{
+					"options": {
+						"content": "context.$component.get(\"Detail\").formValidate().then(function (valid) {\r\n    // Current Component\r\n    let table = context.$page.getComponentByName(\"Records\");\r\n    const i18n = getI18n();\r\n\r\n    $model.ref(\"Detail\").save().then(data =\u003e {\r\n        // Success message\r\n        if (data.resCode == 0) {\r\n            context.$message.success(i18n.successInfo);\r\n            table.doQuery();\r\n            // Close the modal\r\n            $model.ref(\"showModal\").setData(false);\r\n            // Reset\r\n            context.$component.get(\"Detail\").resetFields();\r\n        }\r\n        else {\r\n            context.$message.error(i18n.failureInfo + data.resMsg, 5)\r\n        }\r\n    }).catch(e =\u003e {\r\n        // Failure message\r\n        context.$message.error(i18n.failureInfo + e, 5)\r\n    });\r\n});\r\n\r\nfunction getI18n() {\r\n    const locale = (context.$page.$page.$i18n || {}).locale || \"en_US\";\r\n    const i18n = {\r\n        \"zh_CN\": {\r\n            successInfo: '保存成功',\r\n            failureInfo: '保存失败：'\r\n        },\r\n        \"en_US\": {\r\n            successInfo: 'Save Successfully',\r\n            failureInfo: 'Save Failed:'\r\n        }\r\n    };\r\n    return i18n[locale];\r\n}"
+					},
+					"type": "$core.execJSCode"
+				}
+			],
+			"belongTo": null,
+			"createdDate": "2023-10-14 02:42:11",
+			"custom": true,
+			"id": "003h0000017MZaPGxUKg",
+			"lastModifiedDate": "2023-10-14 02:42:11",
+			"name": "button_22_click",
+			"protectMode": 0,
+			"view": "003g0000017MZXHnuLiK",
+			"view.__objectType": "View",
+			"view.name": "tenant1__tsEAiAC7ixkW5NnP__records",
+			"visibility": 0
+		},
+		{
+			"action": [
+				{
+					"options": {
+						"content": "context.$component.get(\"Detail\").formValidate().then(function (valid) {\r\n    // Current Component\r\n    let table = context.$page.getComponentByName(\"Records\");\r\n    const i18n = getI18n();\r\n\r\n    $model.ref(\"Detail\").save().then(data =\u003e {\r\n        // Success message\r\n        if (data.resCode == 0) {\r\n            table.doQuery();\r\n            // Close modal\r\n            $model.ref(\"showModal\").setData(false);\r\n            // Reset\r\n            setTimeout(function () {\r\n                context.$component.get(\"Detail\").resetFields();\r\n            });\r\n            // Submit for approval\r\n            context.$approval(data.result[0].id).then(res =\u003e {\r\n                if (res.resCode == 0) {\r\n                    context.$message.success(i18n.successInfo);\r\n                }\r\n                else if (res.resCode == \"405230808\") {\r\n                    $model.ref(\"showUserModal\").setData(true);\r\n                    $model.ref(\"recordId\").setData(data.result[0].id);\r\n                }\r\n                else {\r\n                    context.$message.error(i18n.submitFail + res.resMsg, 5)\r\n                }\r\n            })\r\n        }\r\n        else {\r\n            context.$message.error(i18n.failureInfo + data.resMsg, 5)\r\n        }\r\n    }).catch(e =\u003e {\r\n        // Failure message\r\n        context.$message.error(i18n.failureInfo + e, 5)\r\n    });\r\n});\r\n\r\n\r\nfunction getI18n() {\r\n    const locale = (context.$page.$page.$i18n || {}).locale || \"en_US\";\r\n    const i18n = {\r\n        \"zh_CN\": {\r\n            successInfo: '保存成功',\r\n            failureInfo: '保存失败：',\r\n            submitFail: \"提交审批失败：\"\r\n        },\r\n        \"en_US\": {\r\n            successInfo: 'Save Successfully',\r\n            failureInfo: 'Save Failed:',\r\n            submitFail: \"Submit Approval Failed:\"\r\n        }\r\n    };\r\n    return i18n[locale];\r\n}"
+					},
+					"type": "$core.execJSCode"
+				}
+			],
+			"belongTo": null,
+			"createdDate": "2023-10-14 02:42:11",
+			"custom": true,
+			"id": "003h0000017MZaPGxUKh",
+			"lastModifiedDate": "2023-10-14 02:42:11",
+			"name": "button_23_click",
+			"protectMode": 0,
+			"view": "003g0000017MZXHnuLiK",
+			"view.__objectType": "View",
+			"view.name": "tenant1__tsEAiAC7ixkW5NnP__records",
+			"visibility": 0
+		},
+		{
+			"action": [
+				{
+					"options": {
+						"content": "const i18n = getI18n();\r\n\r\ncontext.$approval($model.ref(\"recordId\").getData(), $model.ref(\"approvalUser\").getData()).then(res =\u003e {\r\n    if (res.resCode == 0) {\r\n        context.$message.success(i18n.successInfo);\r\n    }\r\n    else if (res.resCode == \"405230808\") {\r\n        $model.ref(\"showUserModal\").setData(true);\r\n    }\r\n    else {\r\n        context.$message.error(i18n.failureInfo + res.resMsg, 5)\r\n    }\r\n})\r\n\r\n\r\nfunction getI18n() {\r\n    const locale = (context.$page.$page.$i18n || {}).locale || \"en_US\";\r\n    const i18n = {\r\n        \"zh_CN\": {\r\n            successInfo: '保存成功',\r\n            failureInfo: '保存失败：'\r\n        },\r\n        \"en_US\": {\r\n            successInfo: 'Save Successfully',\r\n            failureInfo: 'Save Failed:'\r\n        }\r\n    };\r\n    return i18n[locale];\r\n} "
+					},
+					"type": "$core.execJSCode"
+				}
+			],
+			"belongTo": null,
+			"createdDate": "2023-10-14 02:42:11",
+			"custom": true,
+			"id": "003h0000017MZaPGxUKi",
+			"lastModifiedDate": "2023-10-14 02:42:11",
+			"name": "modal_1_on-ok",
+			"protectMode": 0,
+			"view": "003g0000017MZXHnuLiK",
+			"view.__objectType": "View",
+			"view.name": "tenant1__tsEAiAC7ixkW5NnP__records",
+			"visibility": 0
+		},
+		{
+			"action": [
+				{
+					"options": {
+						"content": "// Current Component\r\nlet table = context.$page.getComponentByName(\"Records\");\r\n\r\n// Get component by node name \r\nlet form = this.$component.get(\"Detail\");\r\n\r\nconst i18n = getI18n();\r\n\r\n// Get the binding model of the component, call the save action to save the data\r\nform.getDataModel().save().then(data =\u003e {\r\n    // Success message\r\n    if (data.resCode == 0) {\r\n        context.$message.success(i18n.successInfo);\r\n        // Refresh table\r\n        table.doQuery();\r\n    }\r\n    else {\r\n        context.$message.error(i18n.failureInfo + data.resMsg, 5)\r\n    }\r\n}).catch(e =\u003e {\r\n    // Failure message\r\n    context.$message.error(i18n.failureInfo + e, 5)\r\n});\r\n\r\nfunction getI18n() {\r\n    const locale = (context.$page.$page.$i18n || {}).locale || \"en_US\";\r\n    const i18n = {\r\n        \"zh_CN\": {\r\n            successInfo: '保存成功',\r\n            failureInfo: '保存失败：'\r\n        },\r\n        \"en_US\": {\r\n            successInfo: 'Save Successfully',\r\n            failureInfo: 'Save Failed:'\r\n        }\r\n    };\r\n    return i18n[locale];\r\n}"
+					},
+					"type": "$core.execJSCode"
+				}
+			],
+			"belongTo": null,
+			"createdDate": "2023-10-14 02:42:11",
+			"custom": true,
+			"id": "003h0000017MZaPGxUKj",
+			"lastModifiedDate": "2023-10-14 02:42:11",
+			"name": "modal_0_on-ok",
+			"protectMode": 0,
+			"view": "003g0000017MZXHnuLiK",
+			"view.__objectType": "View",
+			"view.name": "tenant1__tsEAiAC7ixkW5NnP__records",
+			"visibility": 0
+		},
+		{
+			"action": [
+				{
+					"options": {
+						"content": "var pageName = context.$page.params.pageName;\nvar addPageName = pageName.replace(\"__records\", \"__detail\");\ncontext.$page.loadStdPage(addPageName);"
+					},
+					"type": "$core.execJSCode"
+				}
+			],
+			"belongTo": null,
+			"createdDate": "2023-10-14 02:42:11",
+			"custom": true,
+			"id": "003h0000017MZaPGxUKk",
+			"lastModifiedDate": "2023-10-14 02:42:11",
+			"name": "button_0_click",
+			"protectMode": 0,
+			"view": "003g0000017MZXHnuLiK",
+			"view.__objectType": "View",
+			"view.name": "tenant1__tsEAiAC7ixkW5NnP__records",
+			"visibility": 0
+		},
+		{
+			"action": [
+				{
+					"options": {
+						"content": "// Current Component\r\nlet _component = context.getCurrentComponent()\r\n\r\n// Current Form\r\nlet  _form = _component.getForm()\r\n\r\n_form.formSave()\r\n"
+					},
+					"type": "$core.execJSCode"
+				}
+			],
+			"belongTo": null,
+			"createdDate": "2023-10-14 02:42:11",
+			"custom": true,
+			"id": "003h0000017MZaPGxUKl",
+			"lastModifiedDate": "2023-10-14 02:42:11",
+			"name": "button_15_click",
+			"protectMode": 0,
+			"view": "003g0000017MZXHnuLiK",
+			"view.__objectType": "View",
+			"view.name": "tenant1__tsEAiAC7ixkW5NnP__records",
+			"visibility": 0
+		},
+		{
+			"action": [
+				{
+					"options": {
+						"content": "context.$component.get(\"Detail\").formValidate().then(function (valid) {\r\n    // Current Component\r\n    let table = context.$page.getComponentByName(\"Records\");\r\n    const i18n = getI18n();\r\n\r\n    $model.ref(\"Detail\").save().then(data =\u003e {\r\n        // Success message\r\n        if (data.resCode == 0) {\r\n            context.$message.success(i18n.successInfo);\r\n            table.doQuery();\r\n            // Clear data\r\n            $model.ref(\"Detail\").setData({});\r\n            // Reset\r\n            setTimeout(function () {\r\n                context.$component.get(\"Detail\").resetFields();\r\n            });\r\n        }\r\n        else {\r\n            context.$message.error(i18n.failureInfo + data.resMsg, 5)\r\n        }\r\n    }).catch(e =\u003e {\r\n        // Failure message\r\n        context.$message.error(i18n.failureInfo + e, 5)\r\n    });\r\n});\r\n\r\nfunction getI18n() {\r\n    const locale = (context.$page.$page.$i18n || {}).locale || \"en_US\";\r\n    const i18n = {\r\n        \"zh_CN\": {\r\n            successInfo: '保存成功',\r\n            failureInfo: '保存失败：'\r\n        },\r\n        \"en_US\": {\r\n            successInfo: 'Save Successfully',\r\n            failureInfo: 'Save Failed:'\r\n        }\r\n    };\r\n    return i18n[locale];\r\n}"
+					},
+					"type": "$core.execJSCode"
+				}
+			],
+			"belongTo": null,
+			"createdDate": "2023-10-14 02:42:11",
+			"custom": true,
+			"id": "003h0000017MZaPGxUKm",
+			"lastModifiedDate": "2023-10-14 02:42:11",
+			"name": "button_24_click",
+			"protectMode": 0,
+			"view": "003g0000017MZXHnuLiK",
+			"view.__objectType": "View",
+			"view.name": "tenant1__tsEAiAC7ixkW5NnP__records",
+			"visibility": 0
+		},
+		{
+			"action": [
+				{
+					"options": {
+						"content": "// Reset\r\ncontext.$component.get(\"Detail\").resetFields();"
+					},
+					"type": "$core.execJSCode"
+				}
+			],
+			"belongTo": null,
+			"createdDate": "2023-10-14 02:42:11",
+			"custom": true,
+			"id": "003h0000017MZaPGxUKn",
+			"lastModifiedDate": "2023-10-14 02:42:11",
+			"name": "modal_on-cancel_1545208415426026",
+			"protectMode": 0,
+			"view": "003g0000017MZXHnuLiK",
+			"view.__objectType": "View",
+			"view.name": "tenant1__tsEAiAC7ixkW5NnP__records",
+			"visibility": 0
+		}
+	],
+	"id": "003g0000017MZXHnuLiK",
+	"label": "全部",
+	"lastModifiedDate": "2023-10-14 02:42:12",
+	"layer": "null",
+	"libraries": "[]",
+	"logo": null,
+	"name": "tenant1__tsEAiAC7ixkW5NnP__records",
+	"overridable": true,
+	"pageType": "record",
+	"protectMode": 0,
+	"referencePageId": null,
+	"type": "Page",
+	"version": "1.0.2",
+	"viewData": {
+		"elements": [
+			{
+				"attrs": {},
+				"elements": [
+					{
+						"attrs": {},
+						"elements": [
+							{
+								"attrs": {},
+								"elements": [
+									{
+										"attrs": {},
+										"dataBinding": {
+											"default": {
+												"model": [
+													"Records"
+												]
+											}
+										},
+										"elements": [],
+										"key": 1697251289649,
+										"labelColSpan": 8,
+										"labelWidth": "calc(100% / 24 * 8)",
+										"on": {},
+										"props": {
+											"addRowIndex": false,
+											"autoLoadData": true,
+											"border": "outer",
+											"class": "",
+											"columns": [
+												{
+													"category": 4,
+													"compType": "Text",
+													"dataType": "Text",
+													"defaultRenderConfig": null,
+													"editable": false,
+													"fieldType": "xs_string",
+													"isMobileContent": false,
+													"isMobileExpand": false,
+													"isMobileTitle": true,
+													"key": "tenant1__text__CST",
+													"minWidth": "120px",
+													"showEditHover": true,
+													"title": "{\"zh_CN\": \"名称\", \"en_US\": \"名称\"}"
+												},
+												{
+													"category": 4,
+													"compType": "Text",
+													"dataType": "Text",
+													"defaultRenderConfig": null,
+													"editable": false,
+													"fieldType": "xs_string",
+													"isMobileContent": false,
+													"isMobileExpand": false,
+													"isMobileTitle": false,
+													"key": "tenant1__i2Qy__CST",
+													"minWidth": "120px",
+													"showEditHover": true,
+													"title": "{\"zh_CN\": \"单行文本\", \"en_US\": \"单行文本\"}"
+												},
+												{
+													"category": 4,
+													"compType": "SingleSelect",
+													"dataType": "SingleSelect",
+													"defaultRenderConfig": null,
+													"editable": false,
+													"fieldType": "xs_string_lookup",
+													"isMobileContent": true,
+													"isMobileExpand": false,
+													"isMobileTitle": false,
+													"key": "tenant1__singleselect__CST",
+													"minWidth": "120px",
+													"option": [
+														{
+															"display": {
+																"color": "#cfdfff",
+																"controlFieldValue": "",
+																"createdBy": "10gd0000015yrrauH8NM",
+																"createdBy.name": "zjs",
+																"createdDate": "2023-10-14 10:41:09",
+																"custom": true,
+																"description": "",
+																"id": "00050000017MZVpasAl6",
+																"installedPackage": "",
+																"isActive": true,
+																"isBaseline": false,
+																"isDefault": false,
+																"label": "选项一",
+																"lastModifiedBy": "10gd0000015yrrauH8NM",
+																"lastModifiedBy.name": "zjs",
+																"lastModifiedDate": "2023-10-14 10:41:09",
+																"owner": "10gd0000015yrrauH8NM",
+																"owner.name": "zjs",
+																"sequenceNo": 0,
+																"value": "选项一",
+																"weight": 0
+															},
+															"value": {
+																"color": "#cfdfff",
+																"controlFieldValue": "",
+																"createdBy": "10gd0000015yrrauH8NM",
+																"createdBy.name": "zjs",
+																"createdDate": "2023-10-14 10:41:09",
+																"custom": true,
+																"description": "",
+																"id": "00050000017MZVpasAl6",
+																"installedPackage": "",
+																"isActive": true,
+																"isBaseline": false,
+																"isDefault": false,
+																"label": "选项一",
+																"lastModifiedBy": "10gd0000015yrrauH8NM",
+																"lastModifiedBy.name": "zjs",
+																"lastModifiedDate": "2023-10-14 10:41:09",
+																"owner": "10gd0000015yrrauH8NM",
+																"owner.name": "zjs",
+																"sequenceNo": 0,
+																"value": "选项一",
+																"weight": 0
+															}
+														},
+														{
+															"display": {
+																"color": "#d0f0fd",
+																"controlFieldValue": "",
+																"createdBy": "10gd0000015yrrauH8NM",
+																"createdBy.name": "zjs",
+																"createdDate": "2023-10-14 10:41:09",
+																"custom": true,
+																"description": "",
+																"id": "00050000017MZVpasAl7",
+																"installedPackage": "",
+																"isActive": true,
+																"isBaseline": false,
+																"isDefault": false,
+																"label": "选项二",
+																"lastModifiedBy": "10gd0000015yrrauH8NM",
+																"lastModifiedBy.name": "zjs",
+																"lastModifiedDate": "2023-10-14 10:41:09",
+																"owner": "10gd0000015yrrauH8NM",
+																"owner.name": "zjs",
+																"sequenceNo": 1,
+																"value": "选项二",
+																"weight": 0
+															},
+															"value": {
+																"color": "#d0f0fd",
+																"controlFieldValue": "",
+																"createdBy": "10gd0000015yrrauH8NM",
+																"createdBy.name": "zjs",
+																"createdDate": "2023-10-14 10:41:09",
+																"custom": true,
+																"description": "",
+																"id": "00050000017MZVpasAl7",
+																"installedPackage": "",
+																"isActive": true,
+																"isBaseline": false,
+																"isDefault": false,
+																"label": "选项二",
+																"lastModifiedBy": "10gd0000015yrrauH8NM",
+																"lastModifiedBy.name": "zjs",
+																"lastModifiedDate": "2023-10-14 10:41:09",
+																"owner": "10gd0000015yrrauH8NM",
+																"owner.name": "zjs",
+																"sequenceNo": 1,
+																"value": "选项二",
+																"weight": 0
+															}
+														},
+														{
+															"display": {
+																"color": "#c2f5e9",
+																"controlFieldValue": "",
+																"createdBy": "10gd0000015yrrauH8NM",
+																"createdBy.name": "zjs",
+																"createdDate": "2023-10-14 10:41:09",
+																"custom": true,
+																"description": "",
+																"id": "00050000017MZVpasAl8",
+																"installedPackage": "",
+																"isActive": true,
+																"isBaseline": false,
+																"isDefault": false,
+																"label": "选项三",
+																"lastModifiedBy": "10gd0000015yrrauH8NM",
+																"lastModifiedBy.name": "zjs",
+																"lastModifiedDate": "2023-10-14 10:41:09",
+																"owner": "10gd0000015yrrauH8NM",
+																"owner.name": "zjs",
+																"sequenceNo": 2,
+																"value": "选项三",
+																"weight": 0
+															},
+															"value": {
+																"color": "#c2f5e9",
+																"controlFieldValue": "",
+																"createdBy": "10gd0000015yrrauH8NM",
+																"createdBy.name": "zjs",
+																"createdDate": "2023-10-14 10:41:09",
+																"custom": true,
+																"description": "",
+																"id": "00050000017MZVpasAl8",
+																"installedPackage": "",
+																"isActive": true,
+																"isBaseline": false,
+																"isDefault": false,
+																"label": "选项三",
+																"lastModifiedBy": "10gd0000015yrrauH8NM",
+																"lastModifiedBy.name": "zjs",
+																"lastModifiedDate": "2023-10-14 10:41:09",
+																"owner": "10gd0000015yrrauH8NM",
+																"owner.name": "zjs",
+																"sequenceNo": 2,
+																"value": "选项三",
+																"weight": 0
+															}
+														}
+													],
+													"picklistID": "00040000017MZVpWKag4",
+													"showEditHover": true,
+													"title": "{\"zh_CN\": \"分类\", \"en_US\": \"分类\"}"
+												},
+												{
+													"category": 4,
+													"compType": "DateTime",
+													"dataType": "DateTime",
+													"defaultRenderConfig": {
+														"extend": "icon",
+														"extendMode": "2",
+														"font-size": "14px",
+														"icon": "{\"Name\":\"fa-ss-table-time\",\"link\":\"\",\"ingorePrefix\":true}",
+														"iconColor": "#53a0f0"
+													},
+													"editable": false,
+													"fieldType": "xs_dateTime",
+													"isMobileContent": false,
+													"isMobileExpand": false,
+													"isMobileTitle": false,
+													"key": "tenant1__datetime__CST",
+													"minWidth": "120px",
+													"showEditHover": true,
+													"title": "{\"zh_CN\": \"日期\", \"en_US\": \"日期\"}"
+												},
+												{
+													"category": 3,
+													"compType": "User",
+													"dataType": "User",
+													"defaultRenderConfig": {
+														"extend": "icon",
+														"extendMode": "2",
+														"font-size": "13px",
+														"icon": "{\"Name\":\"fa-ss-table-user\",\"link\":\"\",\"ingorePrefix\":true}",
+														"iconColor": "#53a0f0"
+													},
+													"editable": false,
+													"isMobileContent": false,
+													"isMobileExpand": false,
+													"isMobileTitle": false,
+													"key": "createdBy",
+													"minWidth": "120px",
+													"referenceFieldlist": [
+														{
+															"referenceObjectID": "stad00000000000000GD",
+															"referenceObjectName": "User",
+															"relationshipLabel": "user",
+															"relationshipName": "user"
+														},
+														{
+															"referenceObjectID": "stad00000000000000GG",
+															"referenceObjectName": "PortalUser",
+															"relationshipLabel": "portal user",
+															"relationshipName": "portal user"
+														}
+													],
+													"showEditHover": true,
+													"title": "{\"zh_CN\":\"创建人\",\"en_US\":\"创建人\"}"
+												},
+												{
+													"category": 3,
+													"compType": "DateTime",
+													"dataType": "DateTime",
+													"defaultRenderConfig": {
+														"extend": "icon",
+														"extendMode": "2",
+														"font-size": "14px",
+														"icon": "{\"Name\":\"fa-ss-table-time\",\"link\":\"\",\"ingorePrefix\":true}",
+														"iconColor": "#53a0f0"
+													},
+													"editable": false,
+													"fieldType": "xs_dateTime",
+													"isMobileContent": false,
+													"isMobileExpand": false,
+													"isMobileTitle": false,
+													"key": "createdDate",
+													"minWidth": "120px",
+													"showEditHover": true,
+													"title": "{\"zh_CN\":\"创建时间\",\"en_US\":\"创建时间\"}"
+												},
+												{
+													"align": "",
+													"className": "",
+													"fixed": "",
+													"headStyle": {
+														"className": "",
+														"style": ""
+													},
+													"hidden": false,
+													"operations": [
+														{
+															"props": {
+																"frameShape": "none",
+																"name": "icon_13",
+																"style": "margin-right:8px;",
+																"title": "{\"en_US\":\"Detail\",\"zh_CN\":\"详情\"}"
+															},
+															"type": "detail"
+														},
+														{
+															"props": {
+																"frameShape": "none",
+																"name": "icon_13",
+																"style": "margin-right:8px;",
+																"title": "{\"en_US\":\"Edit\",\"zh_CN\":\"修改\"}"
+															},
+															"type": "edit"
+														},
+														{
+															"props": {
+																"frameShape": "none",
+																"name": "icon_13",
+																"style": "margin-right:8px;",
+																"title": "{\"en_US\":\"Delete\",\"zh_CN\":\"删除\"}"
+															},
+															"type": "delete"
+														}
+													],
+													"selected": false,
+													"style": "",
+													"title": "{\"en_US\":\"Operation\",\"zh_CN\":\"操作\"}",
+													"titleTips": "",
+													"type": "operation",
+													"width": null
+												}
+											],
+											"conditionConfig": {
+												"buttonSpan": 6,
+												"fieldSpan": 6,
+												"items": [],
+												"labelPosition": "top",
+												"labelWidth": 120
+											},
+											"customClassName": "",
+											"customStyle": "",
+											"data": [],
+											"dataSource": "tenant1__004P0000017MZW8wibZo_VIEW",
+											"dataSourceId": "004P0000017MZW8wibZo",
+											"dataSourceType": "view",
+											"editable": false,
+											"height": null,
+											"hightlightRow": false,
+											"multiSelect": true,
+											"name": "Records",
+											"omitColumnOverflow": true,
+											"pageSize": 10,
+											"pageable": true,
+											"pagerConfig": {
+												"align": "right",
+												"currentPage": 1,
+												"enabled": true,
+												"layoutModel": "full",
+												"layouts": [
+													"Sizes",
+													"PrevJump",
+													"PrevPage",
+													"Number",
+													"NextPage",
+													"NextJump",
+													"Jump",
+													"PageCount",
+													"Total"
+												],
+												"pageSize": 12,
+												"pageSizes": [
+													12,
+													30,
+													50,
+													100
+												]
+											},
+											"relativePage": {
+												"add": "tenant1__mahmeXiNYhBZYQy4__form",
+												"detail": "tenant1__mahmeXiNYhBZYQy4__form",
+												"edit": "tenant1__mahmeXiNYhBZYQy4__form"
+											},
+											"rowClassName": "//if (index === 1) {\\n                    // return \"demo-table-info-row\";",
+											"rowIndex": false,
+											"showHeader": true,
+											"showHeaderOverflow": "tooltip",
+											"showOverflow": "tooltip",
+											"showTop": true,
+											"size": "default",
+											"stripe": true,
+											"style": "",
+											"toolbarConfig": {
+												"buttonConfig": {
+													"displayType": [
+														"text",
+														"icon"
+													]
+												},
+												"buttons": [
+													{
+														"props": {
+															"icon": "{\"Name\":\"fa-ss-panel-add\",\"ingorePrefix\":true}",
+															"shape": "square",
+															"size": "small",
+															"style": "margin: 4px;",
+															"text": "{\"en_US\":\"Add\",\"zh_CN\":\"新增\"}",
+															"type": "primary"
+														},
+														"type": "add",
+														"visible": true
+													},
+													{
+														"props": {
+															"icon": "{\"Name\":\"fa-ss-panel-import\",\"ingorePrefix\":true}",
+															"shape": "square",
+															"size": "small",
+															"style": "margin: 4px;",
+															"text": "{\"en_US\":\"Import\",\"zh_CN\":\"导入\"}",
+															"type": "ghost"
+														},
+														"type": "import",
+														"visible": true
+													},
+													{
+														"props": {
+															"icon": "{\"Name\":\"fa-ss-table-export\",\"ingorePrefix\":true}",
+															"shape": "square",
+															"size": "small",
+															"style": "margin: 4px;",
+															"text": "{\"en_US\":\"Export\",\"zh_CN\":\"导出\"}",
+															"type": "ghost"
+														},
+														"type": "export",
+														"visible": true
+													},
+													{
+														"props": {
+															"icon": "{\"Name\":\"fa-ss-panel-print\",\"ingorePrefix\":true}",
+															"shape": "square",
+															"size": "small",
+															"style": "margin: 4px;",
+															"text": "{\"en_US\":\"Print\",\"zh_CN\":\"打印\"}",
+															"type": "ghost"
+														},
+														"type": "print",
+														"visible": false
+													},
+													{
+														"props": {
+															"icon": "{\"Name\":\"fa-ss-panel-delete\",\"ingorePrefix\":true}",
+															"shape": "square",
+															"size": "small",
+															"style": "margin: 4px;",
+															"text": "{\"en_US\":\"Delete\",\"zh_CN\":\"删除\"}",
+															"type": "ghost"
+														},
+														"type": "delete",
+														"visible": true
+													},
+													{
+														"props": {
+															"icon": "{\"Name\":\"fa-ss-panel-batch-edit\",\"ingorePrefix\":true}",
+															"shape": "square",
+															"size": "small",
+															"style": "margin: 15px;",
+															"text": "{\"en_US\":\"Modify\",\"zh_CN\":\"批量修改\"}",
+															"type": "ghost"
+														},
+														"type": "batchEdit",
+														"visible": true
+													}
+												],
+												"iconConfig": {
+													"enableSearch": true
+												},
+												"icons": [
+													{
+														"type": "hideCols"
+													},
+													{
+														"type": "filter"
+													},
+													{
+														"type": "sort"
+													},
+													{
+														"type": "refresh"
+													}
+												]
+											},
+											"transmitStyle": true,
+											"usage": "manager",
+											"usageMode": "manager"
+										},
+										"savedVariable": {},
+										"type": "listdata"
+									}
+								],
+								"key": 1697251289651,
+								"labelColSpan": 8,
+								"labelWidth": "calc(100% / 24 * 8)",
+								"on": {},
+								"props": {
+									"align": "left",
+									"bottomBorder": true,
+									"lg": 24,
+									"md": 24,
+									"name": "col_4",
+									"sm": 24,
+									"xs": 24
+								},
+								"type": "col"
+							}
+						],
+						"key": 1697251289650,
+						"labelColSpan": 8,
+						"labelWidth": "calc(100% / 24 * 8)",
+						"on": {},
+						"props": {
+							"layout": {
+								"pad": {
+									"key": "orgList",
+									"value": [
+										24
+									]
+								},
+								"pc": {
+									"key": "one",
+									"value": [
+										24
+									]
+								},
+								"phone": {
+									"key": "orgList",
+									"value": [
+										24
+									]
+								}
+							},
+							"name": "row_1"
+						},
+						"type": "row"
+					}
+				],
+				"hasCustomPanel": null,
+				"key": 2,
+				"labelColSpan": 8,
+				"labelWidth": "calc(100% / 24 * 8)",
+				"on": {},
+				"props": {
+					"col": 1,
+					"labelPosition": "top",
+					"labelWidth": 120,
+					"name": "form_0"
+				},
+				"type": "form",
+				"widget2": false
+			}
+		],
+		"key": 1,
+		"props": {
+			"name": "DesignerPage_1",
+			"style": ""
+		},
+		"type": "DesignerPage"
+	},
+	"viewModel": {
+		"Records": {
+			"actions": [
+				{
+					"input": [],
+					"method": "query",
+					"name": "query",
+					"output": [
+						{
+							"fieldName": "id",
+							"mappingField": "id"
+						},
+						{
+							"fieldName": "tenant1__text__CST",
+							"mappingField": "tenant1__text__CST"
+						},
+						{
+							"fieldName": "tenant1__i2Qy__CST",
+							"mappingField": "tenant1__i2Qy__CST"
+						},
+						{
+							"fieldName": "tenant1__singleselect__CST",
+							"mappingField": "tenant1__singleselect__CST"
+						},
+						{
+							"fieldName": "tenant1__datetime__CST",
+							"mappingField": "tenant1__datetime__CST"
+						},
+						{
+							"fieldName": "createdBy",
+							"mappingField": "createdBy"
+						},
+						{
+							"fieldName": "createdDate",
+							"mappingField": "createdDate"
+						},
+						{
+							"fieldName": "lastModifiedBy",
+							"mappingField": "lastModifiedBy"
+						},
+						{
+							"fieldName": "lastModifiedDate",
+							"mappingField": "lastModifiedDate"
+						},
+						{
+							"fieldName": "owner",
+							"mappingField": "owner"
+						}
+					],
+					"type": "view",
+					"uri": "tenant1__004P0000017MZW8wibZo_VIEW"
+				},
+				{
+					"input": [
+						{
+							"fieldName": "id",
+							"mappingField": "id"
+						},
+						{
+							"fieldName": "tenant1__text__CST",
+							"mappingField": "tenant1__text__CST"
+						},
+						{
+							"fieldName": "tenant1__i2Qy__CST",
+							"mappingField": "tenant1__i2Qy__CST"
+						},
+						{
+							"fieldName": "tenant1__singleselect__CST",
+							"mappingField": "tenant1__singleselect__CST"
+						},
+						{
+							"fieldName": "tenant1__datetime__CST",
+							"mappingField": "tenant1__datetime__CST"
+						},
+						{
+							"fieldName": "createdBy",
+							"mappingField": "createdBy"
+						},
+						{
+							"fieldName": "createdDate",
+							"mappingField": "createdDate"
+						},
+						{
+							"fieldName": "lastModifiedBy",
+							"mappingField": "lastModifiedBy"
+						},
+						{
+							"fieldName": "lastModifiedDate",
+							"mappingField": "lastModifiedDate"
+						},
+						{
+							"fieldName": "owner",
+							"mappingField": "owner"
+						}
+					],
+					"method": "save",
+					"name": "save",
+					"output": [],
+					"type": "view",
+					"uri": "tenant1__004P0000017MZW8wibZo_VIEW"
+				},
+				{
+					"input": [
+						{
+							"fieldName": "id",
+							"mappingField": "id"
+						},
+						{
+							"fieldName": "tenant1__text__CST",
+							"mappingField": "tenant1__text__CST"
+						},
+						{
+							"fieldName": "tenant1__i2Qy__CST",
+							"mappingField": "tenant1__i2Qy__CST"
+						},
+						{
+							"fieldName": "tenant1__singleselect__CST",
+							"mappingField": "tenant1__singleselect__CST"
+						},
+						{
+							"fieldName": "tenant1__datetime__CST",
+							"mappingField": "tenant1__datetime__CST"
+						},
+						{
+							"fieldName": "createdBy",
+							"mappingField": "createdBy"
+						},
+						{
+							"fieldName": "createdDate",
+							"mappingField": "createdDate"
+						},
+						{
+							"fieldName": "lastModifiedBy",
+							"mappingField": "lastModifiedBy"
+						},
+						{
+							"fieldName": "lastModifiedDate",
+							"mappingField": "lastModifiedDate"
+						},
+						{
+							"fieldName": "owner",
+							"mappingField": "owner"
+						}
+					],
+					"method": "delete",
+					"name": "delete",
+					"output": [],
+					"type": "view",
+					"uri": "tenant1__004P0000017MZW8wibZo_VIEW"
+				},
+				{
+					"input": [],
+					"method": "count",
+					"name": "count",
+					"output": [],
+					"type": "view",
+					"uri": "tenant1__004P0000017MZW8wibZo_VIEW"
+				}
+			],
+			"fields": [
+				{
+					"defaultValueType": "static",
+					"expand": false,
+					"isRequired": false,
+					"label": "全部",
+					"name": "Records",
+					"orign": [
+						{
+							"mappingField": "tenant1__004P0000017MZW8wibZo_VIEW",
+							"name": "tenant1__004P0000017MZW8wibZo_VIEW",
+							"type": "view"
+						}
+					],
+					"rootInstanceId": "Records",
+					"type": "view"
+				},
+				{
+					"expand": false,
+					"label": "fieldlabel.ID",
+					"name": "id",
+					"orign": [
+						{
+							"mappingField": "id",
+							"name": "tenant1__004P0000017MZW8wibZo_VIEW",
+							"type": "view"
+						}
+					],
+					"parentId": "Records",
+					"rootInstanceId": "Records",
+					"type": "xs_string_pk"
+				},
+				{
+					"expand": false,
+					"isCite": false,
+					"label": "名称",
+					"name": "tenant1__text__CST",
+					"orign": [
+						{
+							"mappingField": "tenant1__text__CST",
+							"name": "tenant1__004P0000017MZW8wibZo_VIEW",
+							"type": "view"
+						}
+					],
+					"parentId": "Records",
+					"rootInstanceId": "Records",
+					"type": "xs_string",
+					"visible": true
+				},
+				{
+					"expand": false,
+					"isCite": false,
+					"label": "单行文本",
+					"name": "tenant1__i2Qy__CST",
+					"orign": [
+						{
+							"mappingField": "tenant1__i2Qy__CST",
+							"name": "tenant1__004P0000017MZW8wibZo_VIEW",
+							"type": "view"
+						}
+					],
+					"parentId": "Records",
+					"rootInstanceId": "Records",
+					"type": "xs_string",
+					"visible": true
+				},
+				{
+					"expand": false,
+					"isCite": false,
+					"label": "分类",
+					"name": "tenant1__singleselect__CST",
+					"orign": [
+						{
+							"mappingField": "tenant1__singleselect__CST",
+							"name": "tenant1__004P0000017MZW8wibZo_VIEW",
+							"type": "view"
+						}
+					],
+					"parentId": "Records",
+					"rootInstanceId": "Records",
+					"type": "xs_string_lookup",
+					"visible": true
+				},
+				{
+					"expand": false,
+					"isCite": false,
+					"label": "日期",
+					"name": "tenant1__datetime__CST",
+					"orign": [
+						{
+							"mappingField": "tenant1__datetime__CST",
+							"name": "tenant1__004P0000017MZW8wibZo_VIEW",
+							"type": "view"
+						}
+					],
+					"parentId": "Records",
+					"rootInstanceId": "Records",
+					"type": "xs_dateTime",
+					"visible": true
+				},
+				{
+					"expand": false,
+					"isCite": false,
+					"label": "创建人",
+					"name": "createdBy",
+					"orign": [
+						{
+							"mappingField": "createdBy",
+							"name": "tenant1__004P0000017MZW8wibZo_VIEW",
+							"type": "view"
+						}
+					],
+					"parentId": "Records",
+					"rootInstanceId": "Records",
+					"visible": true
+				},
+				{
+					"expand": false,
+					"isCite": false,
+					"label": "创建时间",
+					"name": "createdDate",
+					"orign": [
+						{
+							"mappingField": "createdDate",
+							"name": "tenant1__004P0000017MZW8wibZo_VIEW",
+							"type": "view"
+						}
+					],
+					"parentId": "Records",
+					"rootInstanceId": "Records",
+					"type": "xs_dateTime",
+					"visible": true
+				},
+				{
+					"expand": false,
+					"isCite": false,
+					"label": "最后修改人",
+					"name": "lastModifiedBy",
+					"orign": [
+						{
+							"mappingField": "lastModifiedBy",
+							"name": "tenant1__004P0000017MZW8wibZo_VIEW",
+							"type": "view"
+						}
+					],
+					"parentId": "Records",
+					"rootInstanceId": "Records",
+					"visible": false
+				},
+				{
+					"expand": false,
+					"isCite": false,
+					"label": "最后修改时间",
+					"name": "lastModifiedDate",
+					"orign": [
+						{
+							"mappingField": "lastModifiedDate",
+							"name": "tenant1__004P0000017MZW8wibZo_VIEW",
+							"type": "view"
+						}
+					],
+					"parentId": "Records",
+					"rootInstanceId": "Records",
+					"type": "xs_dateTime",
+					"visible": false
+				},
+				{
+					"expand": false,
+					"isCite": false,
+					"label": "所有人",
+					"name": "owner",
+					"orign": [
+						{
+							"mappingField": "owner",
+							"name": "tenant1__004P0000017MZW8wibZo_VIEW",
+							"type": "view"
+						}
+					],
+					"parentId": "Records",
+					"rootInstanceId": "Records",
+					"visible": false
+				}
+			],
+			"mapping": [
+				{
+					"bindName": "tenant1__004P0000017MZW8wibZo_VIEW",
+					"bindType": "view",
+					"exclude": "",
+					"include": "ALL",
+					"objectId": "cust0000017MZVpiowOu"
+				}
+			]
+		}
+	},
+	"visibility": 0
+}

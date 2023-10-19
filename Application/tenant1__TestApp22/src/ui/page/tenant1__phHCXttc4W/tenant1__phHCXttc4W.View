@@ -1,0 +1,145 @@
+{
+	"active": false,
+	"application": "000f0000016nofmB9k6i",
+	"application.__objectType": "Application",
+	"application.name": "tenant1__TestApp22",
+	"belongTo": "000f0000016nofmB9k6i",
+	"belongTo.__objectType": "Application",
+	"belongTo.name": "tenant1__TestApp22",
+	"createdDate": "2023-10-14 02:23:45",
+	"custom": true,
+	"customStyle": null,
+	"description": null,
+	"events": [],
+	"id": "003g0000017MYGhfkyga",
+	"label": "应用介绍页",
+	"lastModifiedDate": "2023-10-14 02:23:45",
+	"layer": null,
+	"libraries": null,
+	"logo": null,
+	"name": "tenant1__phHCXttc4W",
+	"overridable": true,
+	"pageType": "introduction",
+	"protectMode": 0,
+	"referencePageId": null,
+	"type": "Page",
+	"version": "1.0.1",
+	"viewData": {
+		"elements": [
+			{
+				"dataBinding": {
+					"default": {
+						"model": [
+							"form_0"
+						]
+					},
+					"readonly": {
+						"model": [
+							"custModel",
+							"readonly"
+						]
+					}
+				},
+				"elements": [
+					{
+						"attrs": {},
+						"elements": [
+							{
+								"attrs": {},
+								"elements": [
+									{
+										"attrs": {},
+										"elements": [],
+										"hasCustomPanel": null,
+										"key": 1645494821006000,
+										"on": {},
+										"props": {
+											"disabled": false,
+											"name": "quilleditor_0",
+											"placeholder": "{\"en_US\":\"Insert text here ...\",\"zh_CN\":\"此处输入内容\"}",
+											"readonly": true,
+											"style": "height:200px",
+											"useStorage": false,
+											"value": "{\"zh_CN\":\"\",\"en_US\":\"\"}"
+										},
+										"type": "quilleditor",
+										"widget2": false
+									}
+								],
+								"hasCustomPanel": null,
+								"key": 1645494821006001,
+								"on": {},
+								"props": {
+									"align": "left",
+									"bottomBorder": true,
+									"lg": 24,
+									"md": 24,
+									"name": "col_0",
+									"sm": 24,
+									"xs": 24
+								},
+								"type": "col",
+								"widget2": false
+							}
+						],
+						"hasCustomPanel": null,
+						"key": 1645494821006002,
+						"on": {},
+						"props": {
+							"layout": {
+								"pc": {
+									"key": "one",
+									"value": [
+										24
+									]
+								},
+								"phone": {
+									"key": "phone1",
+									"value": [
+										24
+									]
+								}
+							},
+							"name": "row_0"
+						},
+						"type": "row",
+						"widget2": false
+					}
+				],
+				"key": 2,
+				"props": {
+					"attrs": {},
+					"dataSource": "gjs__004O000000rKKZUjAtZg_VIEW",
+					"dataSourceId": "004O000000rKKZUjAtZg",
+					"dataSourceType": "Entity",
+					"enableIcon": true,
+					"enableNo": false,
+					"labelPosition": "top",
+					"labelWidth": 120,
+					"layout": {
+						"key": "one_one_one",
+						"value": [
+							8,
+							8,
+							8
+						]
+					},
+					"name": "form_0",
+					"on": {}
+				},
+				"type": "form"
+			}
+		],
+		"key": 1,
+		"on": {
+			"on-load": "Desig_on-load_1"
+		},
+		"props": {
+			"name": "DesignerPage_1"
+		},
+		"type": "DesignerPage",
+		"version": "1.0.2"
+	},
+	"viewModel": null,
+	"visibility": 0
+}

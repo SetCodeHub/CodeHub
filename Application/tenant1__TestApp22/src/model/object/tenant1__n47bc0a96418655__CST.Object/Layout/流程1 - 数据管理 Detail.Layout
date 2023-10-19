@@ -1,0 +1,101 @@
+{
+	"belongTo": null,
+	"content": {
+		"components": [
+			{
+				"components": [
+					{
+						"height": 28,
+						"name": "",
+						"type": "icon",
+						"url": "resource.root/baas/common/images/portal/{{object.tableInfo.name[0].toUpperCase()}}.png",
+						"weight": 0,
+						"width": 28
+					},
+					{
+						"name": "",
+						"text": "{{instance.name}}",
+						"type": "heading"
+					}
+				],
+				"name": "",
+				"style": {
+					"background": "#f5f5f5",
+					"margin": "0",
+					"padding": "2rem"
+				},
+				"type": "hbox"
+			},
+			{
+				"name": "DetailComponent",
+				"properties": {
+					"canOperate": false,
+					"canPage": false,
+					"objectId": "cust0000017MZb702Jeq"
+				},
+				"sections": [
+					{
+						"fields": [
+							{
+								"canNavigate": false,
+								"fieldId": "cust0000017MZb702Jer",
+								"isRelational": false,
+								"navigations": []
+							},
+							{
+								"canNavigate": false,
+								"fieldId": "cust0000017MZb702Jeu",
+								"isRelational": false,
+								"navigations": []
+							},
+							{
+								"canNavigate": false,
+								"fieldId": "cust0000017MZb702Jex",
+								"isRelational": false,
+								"navigations": []
+							},
+							{
+								"canNavigate": false,
+								"fieldId": "cust0000017MZb702Jf0",
+								"isRelational": false,
+								"navigations": []
+							},
+							{
+								"canNavigate": true,
+								"fieldId": "cust0000017MZb702Jf3",
+								"isRelational": true,
+								"navigations": [
+									{
+										"sourceObjectId": "stup000000000000002N"
+									}
+								]
+							}
+						],
+						"label": "Basic Information",
+						"name": "Section1",
+						"sequence": "1",
+						"style": "TwoColumnsTopToBottom"
+					}
+				],
+				"type": "TypicalDetail"
+			}
+		],
+		"name": "",
+		"type": "",
+		"version": "2018.01.26"
+	},
+	"createdDate": "2023-10-14 02:42:21",
+	"custom": true,
+	"description": "Object detail layout",
+	"id": "000D0000017MZb77hUAa",
+	"label": "流程1 - 数据管理 Detail",
+	"lastModifiedDate": "2023-10-14 02:42:21",
+	"name": "流程1 - 数据管理 Detail",
+	"objectId": "cust0000017MZb702Jeq",
+	"objectId.__objectType": "Object",
+	"objectId.name": "tenant1__n47bc0a96418655__CST",
+	"protectMode": 0,
+	"type": "ObjectDetailLayout",
+	"type.name": "ObjectDetailLayout",
+	"visibility": 0
+}

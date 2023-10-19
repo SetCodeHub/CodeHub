@@ -1,0 +1,17 @@
+{
+	"appId": "000f0000016nofmB9k6i",
+	"appId.__objectType": "Application",
+	"appId.name": "tenant1__TestApp22",
+	"belongTo": null,
+	"category": null,
+	"createdDate": "2023-10-14 02:41:29",
+	"custom": true,
+	"id": "003f0000017MZXHZ9Cwy",
+	"lastModifiedDate": "2023-10-14 02:41:29",
+	"name": "tenant1__mahmeXiNYhBZYQy4__form",
+	"parent": null,
+	"protectMode": 0,
+	"seqNo": null,
+	"type": "View",
+	"visibility": 0
+}

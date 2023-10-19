@@ -1,0 +1,28 @@
+{
+	"belongTo": null,
+	"content": {
+		"name": "",
+		"type": "",
+		"view": {
+			"fields": [
+				"name",
+				"tenant1__Field1__CST"
+			],
+			"name": "__layout__tenant1__Object2__CST__detail"
+		}
+	},
+	"createdDate": "2023-10-14 02:15:14",
+	"custom": true,
+	"description": "Object detail layout",
+	"id": "000D0000017MXexL2kG8",
+	"label": "未命名对象1 Detail",
+	"lastModifiedDate": "2023-10-14 02:15:27",
+	"name": "未命名对象1 Detail",
+	"objectId": "cust0000017MXexF5AWm",
+	"objectId.__objectType": "Object",
+	"objectId.name": "tenant1__Object2__CST",
+	"protectMode": 0,
+	"type": "ObjectDetailLayout",
+	"type.name": "ObjectDetailLayout",
+	"visibility": 0
+}
