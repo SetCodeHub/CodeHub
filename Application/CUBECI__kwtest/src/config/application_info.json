@@ -1,0 +1,21 @@
+{
+	"active": true,
+	"belongTo": null,
+	"category": "",
+	"coreVersion": "23.8.0",
+	"createdDate": "2023-09-12 06:15:23",
+	"custom": true,
+	"defaultTabId.__objectType": "Tab",
+	"defaultTabId.name": "Home",
+	"description": "",
+	"id": "000f0000016VhtcvKRbk",
+	"label": "kwtest",
+	"logo": "/lowcode/home/img/defaultAppImg.b91fa3b.png",
+	"name": "CUBECI__kwtest",
+	"protectMode": 0,
+	"publishVersion": null,
+	"theme": null,
+	"type": "Custom Application",
+	"type.name": "Custom Application",
+	"visibility": 0
+}
