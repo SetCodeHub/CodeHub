@@ -1,0 +1,383 @@
+{
+	"active": false,
+	"application": null,
+	"belongTo": "000f0000015eHepHao0e",
+	"belongTo.__objectType": "Application",
+	"belongTo.name": "CUBECI__TestPage",
+	"createdDate": "2023-10-20 02:42:07",
+	"custom": true,
+	"customStyle": null,
+	"description": null,
+	"events": [
+		{
+			"action": [
+				{
+					"options": {
+						"content": "// Current Component\r\nlet _component = context.getCurrentComponent()\r\n\r\n// Current Form\r\nlet  _form = _component.getForm()\r\n\r\n_form.formSave()\r\n"
+					},
+					"type": "$core.execJSCode"
+				}
+			],
+			"belongTo": null,
+			"createdDate": "2023-10-20 02:42:07",
+			"custom": true,
+			"id": "003h0000017WX0KhaJwO",
+			"lastModifiedDate": "2023-10-20 02:42:07",
+			"name": "button_0_click",
+			"protectMode": 0,
+			"view": "003g0000017WX0KgjWYC",
+			"view.__objectType": "View",
+			"view.name": "__layout__CUBECI__ObjAATest__CST__detail",
+			"visibility": 0
+		},
+		{
+			"action": [
+				{
+					"options": {
+						"content": "// Current Component\r\nlet _component = context.getCurrentComponent()\r\n\r\n// Current Form\r\nlet  _form = _component.getForm()\r\n\r\n_form.resetFields()\r\n"
+					},
+					"type": "$core.execJSCode"
+				}
+			],
+			"belongTo": null,
+			"createdDate": "2023-10-20 02:42:07",
+			"custom": true,
+			"id": "003h0000017WX0KhaJwP",
+			"lastModifiedDate": "2023-10-20 02:42:07",
+			"name": "button_1_click",
+			"protectMode": 0,
+			"view": "003g0000017WX0KgjWYC",
+			"view.__objectType": "View",
+			"view.name": "__layout__CUBECI__ObjAATest__CST__detail",
+			"visibility": 0
+		}
+	],
+	"id": "003g0000017WX0KgjWYC",
+	"label": "CUBECI__ObjAATest__CST Detail",
+	"lastModifiedDate": "2023-10-20 02:42:07",
+	"layer": "null",
+	"libraries": "[]",
+	"logo": null,
+	"name": "__layout__CUBECI__ObjAATest__CST__detail",
+	"overridable": true,
+	"pageType": null,
+	"protectMode": 0,
+	"referencePageId": null,
+	"type": "Page",
+	"version": "1.0.1",
+	"viewData": {
+		"dependencies": [
+			{
+				"names": {
+					"cardNames": [],
+					"extendNames": [],
+					"pageMasterNames": []
+				}
+			}
+		],
+		"elements": [
+			{
+				"attrs": {},
+				"dataBinding": {
+					"default": {
+						"model": [
+							"form_0"
+						]
+					}
+				},
+				"elements": [
+					{
+						"attrs": {},
+						"elements": [],
+						"key": 1535715199303019,
+						"on": {},
+						"props": {
+							"class": "form-title-container",
+							"name": "title_1",
+							"text": "ObjAATest",
+							"value": "ObjAATest"
+						},
+						"type": "title"
+					},
+					{
+						"attrs": {},
+						"elements": [
+							{
+								"attrs": {},
+								"elements": [
+									{
+										"attrs": {},
+										"elements": [
+											{
+												"attrs": {},
+												"elements": [
+													{
+														"dataBinding": {
+															"default": {
+																"model": [
+																	"form_0",
+																	"name"
+																]
+															}
+														},
+														"key": 1867546700329202,
+														"props": {
+															"dataField": "name",
+															"dataFieldType": "xs_string",
+															"label": "{\"en_US\":\"Name\",\"zh_CN\":\"名称\"}",
+															"name": "input_1697769727573",
+															"readonly": false,
+															"type": "text"
+														},
+														"type": "input"
+													}
+												],
+												"key": 1867546700329201,
+												"on": {},
+												"props": {
+													"align": "left",
+													"lg": 8,
+													"md": 8,
+													"name": "col_3",
+													"sm": 24,
+													"xs": 24
+												},
+												"type": "col"
+											}
+										],
+										"key": 1867546700329200,
+										"on": {},
+										"props": {
+											"layout": {
+												"pad": {
+													"key": "pad1",
+													"value": [
+														24
+													]
+												},
+												"pc": {
+													"key": "one_one_one",
+													"value": [
+														8,
+														8,
+														8
+													]
+												},
+												"phone": {
+													"key": "phone1",
+													"value": [
+														24
+													]
+												}
+											},
+											"name": "row_0"
+										},
+										"type": "row"
+									}
+								],
+								"key": 1535715199303036,
+								"on": {},
+								"props": {
+									"name": "layoutgrid_1"
+								},
+								"type": "layoutgrid"
+							},
+							{
+								"attrs": {},
+								"elements": [
+									{
+										"attrs": {},
+										"elements": [],
+										"key": 1535946611880036,
+										"on": {
+											"click": {
+												"actions": [
+													{
+														"options": {
+															"content": "// Current Component\r\nlet _component = context.getCurrentComponent()\r\n\r\n// Current Form\r\nlet  _form = _component.getForm()\r\n\r\n_form.formSave()\r\n"
+														},
+														"type": "$core.execJSCode"
+													}
+												],
+												"graph": "",
+												"serviceList": []
+											}
+										},
+										"props": {
+											"name": "button_0",
+											"style": "margin-right:20px;",
+											"text": "{\"en_US\":\"Save\",\"fr_FR\":\"\",\"ja_JP\":\"\",\"zh_CN\":\"保存\"}",
+											"type": "primary"
+										},
+										"type": "button"
+									},
+									{
+										"attrs": {},
+										"elements": [],
+										"key": 1535946611880037,
+										"on": {
+											"click": {
+												"actions": [
+													{
+														"options": {
+															"content": "// Current Component\r\nlet _component = context.getCurrentComponent()\r\n\r\n// Current Form\r\nlet  _form = _component.getForm()\r\n\r\n_form.resetFields()\r\n"
+														},
+														"type": "$core.execJSCode"
+													}
+												],
+												"graph": "",
+												"serviceList": []
+											}
+										},
+										"props": {
+											"name": "button_1",
+											"style": "",
+											"text": "{\"en_US\":\"Reset\",\"fr_FR\":\"\",\"ja_JP\":\"\",\"zh_CN\":\"重置\"}"
+										},
+										"type": "button"
+									}
+								],
+								"key": 1535946611880038,
+								"on": {},
+								"props": {
+									"align": "center",
+									"class": "form-buttons-container",
+									"name": "container_1"
+								},
+								"type": "container"
+							}
+						],
+						"key": 1535715199303039,
+						"on": {},
+						"props": {
+							"name": "container_1"
+						},
+						"type": "container"
+					}
+				],
+				"key": 1538107283948000,
+				"on": {},
+				"props": {
+					"dataSource": "CUBECI__ObjAATest__CST",
+					"dataSourceId": "CUBECI__ObjAATest__CST",
+					"dataSourceType": "Entity",
+					"labelPosition": "top",
+					"labelWidth": 120,
+					"layout": {
+						"key": "one_one_one",
+						"value": [
+							8,
+							8,
+							8
+						]
+					},
+					"name": "form_0"
+				},
+				"type": "form"
+			}
+		],
+		"key": 1,
+		"props": {
+			"name": "DesignerPage_1"
+		},
+		"type": "DesignerPage",
+		"version": "1.0.2"
+	},
+	"viewModel": {
+		"form_0": {
+			"actions": [
+				{
+					"input": [],
+					"method": "query",
+					"name": "query",
+					"output": [
+						{
+							"fieldName": "name",
+							"mappingField": "name"
+						}
+					],
+					"type": "object",
+					"uri": "CUBECI__ObjAATest__CST"
+				},
+				{
+					"input": [
+						{
+							"fieldName": "name",
+							"mappingField": "name"
+						}
+					],
+					"method": "save",
+					"name": "save",
+					"output": [],
+					"type": "object",
+					"uri": "CUBECI__ObjAATest__CST"
+				},
+				{
+					"input": [
+						{
+							"fieldName": "name",
+							"mappingField": "name"
+						}
+					],
+					"method": "delete",
+					"name": "delete",
+					"output": [],
+					"type": "object",
+					"uri": "CUBECI__ObjAATest__CST"
+				},
+				{
+					"input": [],
+					"method": "count",
+					"name": "count",
+					"output": [],
+					"type": "object",
+					"uri": "CUBECI__ObjAATest__CST"
+				}
+			],
+			"fields": [
+				{
+					"_uid": 0,
+					"defaultValue": {},
+					"expand": false,
+					"isRequired": false,
+					"label": "form_0",
+					"name": "form_0",
+					"orign": [
+						{
+							"mappingField": "CUBECI__ObjAATest__CST",
+							"name": "CUBECI__ObjAATest__CST",
+							"type": "CUBECI__ObjAATest__CST"
+						}
+					],
+					"rootInstanceId": "form_0",
+					"type": "object"
+				},
+				{
+					"_uid": 1,
+					"expand": false,
+					"label": "{\"en_US\":\"Name\",\"zh_CN\":\"名称\"}",
+					"name": "name",
+					"orign": [
+						{
+							"mappingField": "name",
+							"name": "CUBECI__ObjAATest__CST",
+							"type": "object"
+						}
+					],
+					"parentId": "form_0",
+					"rootInstanceId": "form_0",
+					"type": "xs_string"
+				}
+			],
+			"mapping": [
+				{
+					"bindName": "CUBECI__ObjAATest__CST",
+					"bindType": "object",
+					"exclude": "",
+					"include": "ALL"
+				}
+			]
+		}
+	},
+	"visibility": 0
+}

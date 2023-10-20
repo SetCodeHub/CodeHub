@@ -1,0 +1,19 @@
+{
+	"appId": "000f0000015eHepHao0e",
+	"appId.__objectType": "Application",
+	"appId.name": "CUBECI__TestPage",
+	"belongTo": null,
+	"category": null,
+	"createdDate": "2023-10-20 02:42:07",
+	"custom": true,
+	"id": "003f0000017WX0KjHuim",
+	"lastModifiedDate": "2023-10-20 02:42:07",
+	"name": "CUBECI__ObjAATest__CST",
+	"parent": "003f000000kxaz1iXBOi",
+	"parent.__objectType": "ApplicationComponent",
+	"parent.name": "",
+	"protectMode": 0,
+	"seqNo": null,
+	"type": "CustomObject",
+	"visibility": 0
+}

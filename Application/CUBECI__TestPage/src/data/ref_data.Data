@@ -1,4 +1,13 @@
 {
 	"cust": null,
-	"stad": null
+	"stad": [
+		{
+			"cond": null,
+			"exportType": "stad",
+			"id": "004U0000017WX5zQPWIi",
+			"installStrategy": "fixed",
+			"objectName": "CUBECI__ObjAATest__CST",
+			"packageID": "003G0000015eHep7NFKK"
+		}
+	]
 }

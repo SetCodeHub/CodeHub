@@ -1,0 +1,27 @@
+{
+	"belongTo": null,
+	"content": {
+		"name": "",
+		"type": "",
+		"view": {
+			"fields": [
+				"name"
+			],
+			"name": "__layout__CUBECI__ObjAATest__CST__detail"
+		}
+	},
+	"createdDate": "2023-10-20 02:42:07",
+	"custom": true,
+	"description": "Object detail layout",
+	"id": "000D0000017WX0JpMw64",
+	"label": "ObjAATest Detail",
+	"lastModifiedDate": "2023-10-20 02:42:07",
+	"name": "ObjAATest Detail",
+	"objectId": "cust0000017WX0J0qKwa",
+	"objectId.__objectType": "Object",
+	"objectId.name": "CUBECI__ObjAATest__CST",
+	"protectMode": 0,
+	"type": "ObjectDetailLayout",
+	"type.name": "ObjectDetailLayout",
+	"visibility": 0
+}

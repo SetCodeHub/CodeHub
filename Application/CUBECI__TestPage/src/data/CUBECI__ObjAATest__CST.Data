@@ -1,0 +1,5 @@
+"{""ObjectName"":""CUBECI__ObjAATest__CST"",""Version"":""1.0"",""TimeZone"":""GMT"",""Pattern"":""fixed""}"
+id,name,createdBy,createdDate,lastModifiedBy,lastModifiedDate,systemModifiedDate,deletedDate,isDeleted,owner,isLocked,currencyIsoCode,installedPackage
+string,string,string,date,string,date,date,date,bool,string,bool,string,string
+cKwa0000017WX2Av8yzw,test,10gd00000114v0UMyIYy,2023-10-20 02:42:32,10gd00000114v0UMyIYy,2023-10-20 02:42:32,NULL,NULL,false,10gd00000114v0UMyIYy,false,USD,NULL
+cKwa0000017WX2P56IJU,test,10gd00000114v0UMyIYy,2023-10-20 02:42:35,10gd00000114v0UMyIYy,2023-10-20 02:42:35,NULL,NULL,false,10gd00000114v0UMyIYy,false,USD,NULL
