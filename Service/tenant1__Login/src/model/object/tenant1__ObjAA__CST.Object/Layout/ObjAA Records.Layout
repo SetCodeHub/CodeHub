@@ -1,0 +1,27 @@
+{
+	"belongTo": null,
+	"content": {
+		"name": "",
+		"type": "",
+		"view": {
+			"fields": [
+				"name"
+			],
+			"name": "__layout__tenant1__ObjAA__CST__records"
+		}
+	},
+	"createdDate": "2023-10-23 09:27:57",
+	"custom": true,
+	"description": "Object records layout",
+	"id": "000D0000017byiVCMu3t",
+	"label": "ObjAA Records",
+	"lastModifiedDate": "2023-10-23 09:27:57",
+	"name": "ObjAA Records",
+	"objectId": "cust0000017byiV7pJyq",
+	"objectId.__objectType": "Object",
+	"objectId.name": "tenant1__ObjAA__CST",
+	"protectMode": 0,
+	"type": "ObjectRecordsLayout",
+	"type.name": "ObjectRecordsLayout",
+	"visibility": 0
+}

@@ -1,0 +1,28 @@
+{
+	"belongTo": null,
+	"content": {
+		"name": "",
+		"type": "",
+		"view": {
+			"fields": [
+				"name",
+				"tenant1__Pick__CST"
+			],
+			"name": "__layout__tenant1__ObjAA__CST__detail"
+		}
+	},
+	"createdDate": "2023-10-23 09:27:57",
+	"custom": true,
+	"description": "Object detail layout",
+	"id": "000D0000017byiVCMu3s",
+	"label": "ObjAA Detail",
+	"lastModifiedDate": "2023-10-23 09:28:21",
+	"name": "ObjAA Detail",
+	"objectId": "cust0000017byiV7pJyq",
+	"objectId.__objectType": "Object",
+	"objectId.name": "tenant1__ObjAA__CST",
+	"protectMode": 0,
+	"type": "ObjectDetailLayout",
+	"type.name": "ObjectDetailLayout",
+	"visibility": 0
+}

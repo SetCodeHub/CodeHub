@@ -1,0 +1,10 @@
+{
+	"appProtectMode": 2,
+	"contact": "{\"email\":\"\",\"link\":\"\"}",
+	"copyright": "",
+	"description": "",
+	"docAddress": null,
+	"isEncrypted": true,
+	"postInstallHandler": "",
+	"preInstallHandler": ""
+}

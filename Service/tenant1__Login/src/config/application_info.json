@@ -1,0 +1,23 @@
+{
+	"belongTo": null,
+	"category": "Others",
+	"category.name": "Others",
+	"coreVersion": "1.3.11",
+	"createdDate": "2023-08-24 03:37:42",
+	"custom": true,
+	"customCategory": "",
+	"description": "",
+	"icon": "bo_icon_CDM",
+	"iconColor": "#2680E4 ",
+	"id": "00060000015zzSFDfH2O",
+	"label": "Login",
+	"logo": "",
+	"name": "tenant1__Login",
+	"protectMode": 0,
+	"publishVersion": "2.0.0",
+	"type": "simple",
+	"version": 1,
+	"visibility": 0,
+	"yaml": null,
+	"yamlVersion": null
+}

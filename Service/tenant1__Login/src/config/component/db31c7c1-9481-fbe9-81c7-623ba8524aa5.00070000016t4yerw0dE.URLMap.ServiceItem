@@ -1,0 +1,20 @@
+{
+	"belongTo": null,
+	"category": null,
+	"createdDate": "2023-09-26 08:13:18",
+	"custom": true,
+	"id": "00070000016t4yerw0dE",
+	"itemID": "db31c7c1-9481-fbe9-81c7-623ba8524aa5",
+	"lastModifiedDate": "2023-09-26 08:13:18",
+	"name": "db31c7c1-9481-fbe9-81c7-623ba8524aa5",
+	"parent": "00060000015zzSFDfH2O",
+	"parent.__objectType": "ServiceItem",
+	"parent.name": "",
+	"protectMode": 0,
+	"seqNo": null,
+	"serviceID": "00060000015zzSFDfH2O",
+	"serviceID.__objectType": "Service",
+	"serviceID.name": "tenant1__Login",
+	"type": "URLMap",
+	"visibility": 0
+}
