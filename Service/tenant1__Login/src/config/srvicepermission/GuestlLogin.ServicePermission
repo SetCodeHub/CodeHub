@@ -1,0 +1,32 @@
+{
+	"belongTo": "00060000015zzSFDfH2O",
+	"belongTo.__objectType": "Service",
+	"belongTo.name": "tenant1__Login",
+	"category": "",
+	"createdDate": "2023-09-26 08:13:46",
+	"custom": true,
+	"customAPIs": [
+		{
+			"belongTo": null,
+			"createdDate": "2023-09-26 08:14:01",
+			"custom": true,
+			"id": "00350000016t51sN6Sga",
+			"lastModifiedDate": "2023-09-26 08:14:01",
+			"method": "GET",
+			"name": null,
+			"permission": "GuestlLogin",
+			"protectMode": 0,
+			"url": "/service/tenant1__Login/1.0.0/login",
+			"visibility": 0
+		}
+	],
+	"description": "",
+	"id": "00340000016t50lWF1WK",
+	"label": "GuestlLogin",
+	"lastModifiedDate": "2023-09-26 08:13:46",
+	"name": "GuestlLogin",
+	"newPermission": false,
+	"parent": "",
+	"protectMode": 0,
+	"visibility": 0
+}

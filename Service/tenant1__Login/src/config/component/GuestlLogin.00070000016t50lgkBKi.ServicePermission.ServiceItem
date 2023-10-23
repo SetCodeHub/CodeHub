@@ -1,0 +1,18 @@
+{
+	"belongTo": null,
+	"category": null,
+	"createdDate": "2023-09-26 08:13:46",
+	"custom": true,
+	"id": "00070000016t50lgkBKi",
+	"itemID": "GuestlLogin",
+	"lastModifiedDate": "2023-09-26 08:13:46",
+	"name": "GuestlLogin",
+	"parent": "",
+	"protectMode": 0,
+	"seqNo": null,
+	"serviceID": "00060000015zzSFDfH2O",
+	"serviceID.__objectType": "Service",
+	"serviceID.name": "tenant1__Login",
+	"type": "ServicePermission",
+	"visibility": 0
+}

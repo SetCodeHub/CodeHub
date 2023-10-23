@@ -1,0 +1,27 @@
+swagger: "2.0"
+info:
+    description: OPEN API Swagger - 2.0
+    version: 1.0.0
+    title: Custom API Document
+schemes:
+    - http
+consumes:
+    - application/json
+produces:
+    - application/json
+paths:
+    /service/tenant1__Login/1.0.0/login:
+        get:
+            tags:
+                - tenant1__login
+            operationId: login
+            parameters:
+                - name: userName
+                  in: query
+                  required: true
+                  type: string
+            responses:
+                200:
+                    description: 请求成功
+                400:
+                    description: 错误请求
