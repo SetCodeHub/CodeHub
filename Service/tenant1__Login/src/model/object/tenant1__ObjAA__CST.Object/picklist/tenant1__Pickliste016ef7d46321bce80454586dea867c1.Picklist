@@ -55,6 +55,27 @@
 			"sequenceNo": 1,
 			"visibility": 0,
 			"weight": 0
+		},
+		{
+			"belongTo": null,
+			"color": "",
+			"controlFieldValue": null,
+			"createdDate": "2023-10-23 09:58:48",
+			"custom": true,
+			"description": null,
+			"id": "00050000017c0vD27gFk",
+			"isActive": true,
+			"isDefault": false,
+			"label": "test3",
+			"lastModifiedDate": "2023-10-23 09:58:48",
+			"name": "test3",
+			"picklistId": "00040000017bykGysG4u",
+			"picklistId.__objectType": "Picklist",
+			"picklistId.name": "tenant1__Pickliste016ef7d46321bce80454586dea867c1",
+			"protectMode": 0,
+			"sequenceNo": 0,
+			"visibility": 0,
+			"weight": 0
 		}
 	],
 	"visibility": 0
