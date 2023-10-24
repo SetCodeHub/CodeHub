@@ -1,0 +1,19 @@
+{
+	"appId": "000f0000017CtAhqMhwO",
+	"appId.__objectType": "Application",
+	"appId.name": "tenant1__MenuApp1",
+	"belongTo": null,
+	"category": null,
+	"createdDate": "2023-10-08 06:40:39",
+	"custom": true,
+	"id": "003f0000017CtCeJNpY0",
+	"lastModifiedDate": "2023-10-08 06:40:39",
+	"name": "tenant1__MenuBPM22",
+	"parent": "003f0000017CtBLy3Dto",
+	"parent.__objectType": "ApplicationComponent",
+	"parent.name": "Logic",
+	"protectMode": 0,
+	"seqNo": null,
+	"type": "BusinessProcess",
+	"visibility": 0
+}

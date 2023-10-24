@@ -1,0 +1,79 @@
+{
+	"active": true,
+	"appInstruction": [],
+	"belongTo": null,
+	"category": "",
+	"cloneable": null,
+	"configItems": [],
+	"configs": [],
+	"coreVersion": "1.3.11",
+	"createdDate": "2023-10-08 06:40:12",
+	"custom": true,
+	"defaultTabId": "001g0000017CtAheRYTg",
+	"defaultTabId.__objectType": "Tab",
+	"defaultTabId.name": "tenant1__MenuApp1_home",
+	"description": "",
+	"id": "000f0000017CtAhqMhwO",
+	"introductionPageID": null,
+	"isIncremental": false,
+	"label": "MenuApp1",
+	"lastModifiedDate": "2023-10-17 11:56:43",
+	"logo": "",
+	"name": "tenant1__MenuApp1",
+	"newPermission": false,
+	"properties": {
+		"initialPage": {
+			"openInWorkbench": true,
+			"type": "ViewTab",
+			"webURL": "tenant1__sdfws"
+		},
+		"mobileMenus": [],
+		"packageId": "003G0000017CtAhWDBho",
+		"version": "180828"
+	},
+	"protectMode": 0,
+	"publishVersion": "1.0.0",
+	"runtimeProperties": {
+		"initialPage": {
+			"openInWorkbench": true,
+			"type": "ViewTab",
+			"webURL": "tenant1__sdfws"
+		},
+		"mobileMenus": [],
+		"packageId": "003G0000017CtAhWDBho",
+		"version": "180828"
+	},
+	"services": [
+		{
+			"appId": "000f0000017CtAhqMhwO",
+			"appId.__objectType": "Application",
+			"appId.name": "tenant1__MenuApp1",
+			"appServiceRelation": 1,
+			"belongTo": null,
+			"createdDate": "2023-10-08 07:17:21",
+			"custom": true,
+			"id": "003V0000017CvpFiJsNE",
+			"lastModifiedDate": "2023-10-08 07:53:35",
+			"name": null,
+			"protectMode": 0,
+			"publishVersion": "",
+			"sequenceNo": 0,
+			"serviceDescription": "",
+			"serviceId": "000f0000017Ct5LEkFHM",
+			"serviceId.__objectType": "Application",
+			"serviceId.name": "tenant1__BPMApp11",
+			"serviceLabel": "BPMApp11",
+			"serviceVersion": null,
+			"skipCheck": false,
+			"versionRules": "{\"operator\":\"eq\",\"value\":\"1.0.0\"}",
+			"visibility": 0
+		}
+	],
+	"supportBO20": false,
+	"theme": null,
+	"translations": [],
+	"type": "Custom Application",
+	"type.name": "Custom Application",
+	"visibility": 0,
+	"visibleScope": null
+}

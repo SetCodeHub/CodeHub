@@ -1,0 +1,17 @@
+{
+	"appId": "000f0000017Ct5LEkFHM",
+	"appId.__objectType": "Application",
+	"appId.name": "tenant1__BPMApp11",
+	"belongTo": null,
+	"category": null,
+	"createdDate": "2023-10-08 06:39:08",
+	"custom": true,
+	"id": "003f0000017Ct5z3PdWS",
+	"lastModifiedDate": "2023-10-08 06:39:08",
+	"name": "Logic",
+	"parent": null,
+	"protectMode": 0,
+	"seqNo": null,
+	"type": "Folder",
+	"visibility": 0
+}

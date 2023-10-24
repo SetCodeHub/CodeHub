@@ -1,0 +1,10 @@
+{
+	"initialPage": {
+		"openInWorkbench": true,
+		"type": "ViewTab",
+		"webURL": "tenant1__sdfws"
+	},
+	"mobileMenus": [],
+	"packageId": "003G0000017CtAhWDBho",
+	"version": "180828"
+}

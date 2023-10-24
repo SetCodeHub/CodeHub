@@ -1,0 +1,22 @@
+{
+	"appId": "000f0000017CtAhqMhwO",
+	"appId.__objectType": "Application",
+	"appId.name": "tenant1__MenuApp1",
+	"belongTo": null,
+	"createdDate": "2023-10-08 06:40:13",
+	"custom": true,
+	"description": "The home tab.",
+	"id": "001u0000017CtAiNZm9w",
+	"isLeaf": true,
+	"label": "Home",
+	"lastModifiedDate": "2023-10-08 06:40:13",
+	"logo": "menuicon icon-home",
+	"name": "home",
+	"parentMenu": null,
+	"protectMode": 0,
+	"sequenceNo": null,
+	"tabId": "001g0000017CtAheRYTg",
+	"tabId.__objectType": "Tab",
+	"tabId.name": "tenant1__MenuApp1_home",
+	"visibility": 0
+}

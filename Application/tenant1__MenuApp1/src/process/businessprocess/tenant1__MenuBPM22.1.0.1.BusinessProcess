@@ -1,0 +1,106 @@
+{
+	"active": true,
+	"belongTo": "000f0000017CtAhqMhwO",
+	"belongTo.__objectType": "Application",
+	"belongTo.name": "tenant1__MenuApp1",
+	"compilerVer": 2,
+	"config": {
+		"cancelable": false,
+		"noCancelAfterElem": "",
+		"noCancelAfterElemLabel": "",
+		"sensitive": true
+	},
+	"createdDate": "2023-10-08 06:40:39",
+	"custom": true,
+	"description": "",
+	"extRef": "",
+	"id": "001L0000017CtCdgDBb6",
+	"instanceLabel": "",
+	"jsonDefinition": {
+		"active": false,
+		"description": "",
+		"extRef": "",
+		"id": "",
+		"instanceLabel": "",
+		"interfaces": [
+			{
+				"operation": "start"
+			}
+		],
+		"label": "MenuBPM22",
+		"laneSet": {
+			"label": "",
+			"lanes": [
+				{
+					"color": "#6fe4d1",
+					"elements": [
+						"userTask",
+						"start"
+					],
+					"height": 200,
+					"label": "lane",
+					"name": "lane"
+				}
+			],
+			"name": ""
+		},
+		"lastModifiedBy": "10gd0000015yrrauH8NM",
+		"localUrl": "",
+		"name": "tenant1__MenuBPM22",
+		"noMatchedError": false,
+		"overridable": true,
+		"startEvents": [
+			{
+				"connector": "userTask",
+				"connectorPoint": "{\"fromPort\":\"R1\",\"toPort\":\"L1\",\"joints\":[\"149 100\",\"183.5 100\"]}",
+				"label": "Start",
+				"locationX": 100,
+				"locationY": 100,
+				"name": "start",
+				"type": "Start"
+			}
+		],
+		"startType": "",
+		"status": "Error",
+		"userTasks": [
+			{
+				"approvalType": "Single",
+				"autoApproval": {
+					"approvedByBPStarter": false,
+					"approvedByPreTaskOwner": false
+				},
+				"groupAsSingleParticipant": false,
+				"label": "User Task",
+				"locationX": 250,
+				"locationY": 100,
+				"managerLevel": 1,
+				"name": "userTask",
+				"priority": 3,
+				"riseIfManagerNotExist": true,
+				"routeType": "Router",
+				"router": {
+					"defaultRouteTo": "",
+					"defaultRouteType": "Current user",
+					"externalUsed": false,
+					"name": ""
+				}
+			}
+		],
+		"version": "1.0.1"
+	},
+	"label": "MenuBPM22",
+	"lastModifiedDate": "2023-10-08 07:22:19",
+	"localUrl": "",
+	"logo": null,
+	"name": "tenant1__MenuBPM22",
+	"overridable": true,
+	"protectMode": 0,
+	"published": true,
+	"startStage": null,
+	"startType": "",
+	"status": "Pass",
+	"status.name": "Pass",
+	"version": "1.0.1",
+	"visibility": 0,
+	"webSite": null
+}

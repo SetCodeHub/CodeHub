@@ -1,0 +1,38 @@
+{
+	"active": false,
+	"application": "000f0000017CtAhqMhwO",
+	"application.__objectType": "Application",
+	"application.name": "tenant1__MenuApp1",
+	"belongTo": "000f0000017CtAhqMhwO",
+	"belongTo.__objectType": "Application",
+	"belongTo.name": "tenant1__MenuApp1",
+	"createdDate": "2023-10-17 11:56:28",
+	"custom": true,
+	"customStyle": "/* Recommended builtin styles, generally there is no need to be modified */\nhtml, body {\n    height: 100%;\n}\n\n.xview-designer-page {\n    overflow: auto;\n}\n\n@media (min-width: 992px) {\n    .ivu-row .ivu-col:first-child {\n        padding-left: 0;\n    }\n\n    .ivu-row .ivu-col:last-child {\n        padding-right: 0;\n    }\n}\n\n.ivu-form-item {\n    padding: 0;\n}\n\n.xview-container\u003e.ivu-input-wrapper {\n    margin-top: 10px;\n    margin-bottom: 10px;\n}\n\n.ivu-col\u003e.ivu-input-wrapper {\n    margin-top: 10px;\n    margin-bottom: 10px;\n}\n\n.ivu-btn-large {\n    padding: 9px 30px !important;\n}\n\n.ivu-row\u003e.ivu-col\u003e.ivu-btn-large {\n    margin-top: 10px;\n}\n\n.ivu-form\u003e.ivu-row\u003e.ivu-col\u003e.ivu-btn-large {\n    margin-top: 30px;\n}\n/* --------------------------------------------------------------------- */",
+	"description": null,
+	"events": [],
+	"id": "003g0000017SBuGLpvzU",
+	"label": "sdfws",
+	"lastModifiedDate": "2023-10-17 11:56:28",
+	"layer": "{}",
+	"libraries": "[]",
+	"logo": null,
+	"name": "tenant1__sdfws",
+	"overridable": true,
+	"pageType": null,
+	"protectMode": 0,
+	"referencePageId": null,
+	"type": "Page",
+	"version": "1.0.1",
+	"viewData": {
+		"elements": [],
+		"key": 1,
+		"props": {
+			"name": "DesignerPage_1"
+		},
+		"type": "DesignerPage",
+		"version": "1.0.2"
+	},
+	"viewModel": {},
+	"visibility": 0
+}
